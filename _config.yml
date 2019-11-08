@@ -16,3 +16,4 @@ sass:
 
 gems:
   - jekyll-autoprefixer
+  - jekyll-scholar
