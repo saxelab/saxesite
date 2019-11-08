@@ -1,0 +1,18 @@
+collections:
+  people:
+  talks:
+
+plugins: ['jekyll/scholar']
+
+scholar:
+  style:  apa
+  bibliography_template: bib
+  replace_strings: true
+  repository: assets/papers
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+gems:
+  - jekyll-autoprefixer

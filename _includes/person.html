@@ -1,0 +1,31 @@
+<div class="row my-5">
+     <div class="col-md-3">
+      {% if person.image %}
+     	<img class="img-fluid rounded" src="assets/images/{{ person.image}}" alt="Portrait">
+      {% endif %}
+     </div>
+     <div class="col">
+  		<div class="lead">{{ person.name }}</div>
+  		<div class="text-muted">{{ person.position }}</div><br>
+      {% if person.orcid %}
+  		<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/{{person.orcid}}" href="https://orcid.org/{{person.orcid}}" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;">
+        <i class="ai ai-orcid ai-1x orcid"></i>https://orcid.org/{{person.orcid}}</a> 
+      </div>
+      {% endif %}
+
+      {% if person.googlescholar %}
+      <div>
+  		  <a href="{{person.googlescholar}}"><i class="ai ai-google-scholar ai-1x googlescholar"></i>Google Scholar</a> 
+      </div>
+      {% endif %}
+       
+      {% if person.website %}
+      <div>
+  		  <a href="{{person.website}}">Personal website</a>
+      </div>
+      {% endif %}
+  		 
+  		<p>{{ person.content | markdownify }}</p>
+
+  	</div>
+</div>

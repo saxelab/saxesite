@@ -1,0 +1,26 @@
+---
+layout: default
+title: People
+---
+
+
+{% assign people = site.people | where:"position","Principal Investigator" %}
+{% for person in people %}
+
+  {% include person.html %}
+
+{% endfor %}
+
+{% assign people = site.people | where:"position","DPhil Student" %}
+{% for person in people %}
+
+  {% include person.html %}
+
+{% endfor %}
+
+{% assign people = site.people | where:"position","MSc Student" %}
+{% for person in people %}
+
+  {% include person.html %}
+
+{% endfor %}

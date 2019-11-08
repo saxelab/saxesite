@@ -1,0 +1,21 @@
+---
+layout: default
+title: Talks
+---
+
+{% assign sorted_talks = site.talks | sort: 'year' | reverse %}
+{% for talk in sorted_talks %}
+<div class="row my-5">
+     <div class="col-md-3">
+     	<div class="embed-responsive embed-responsive-16by9">
+	  		<iframe class="embed-responsive-item" src="{{talk.embedurl}}" allowfullscreen></iframe>
+		</div>
+     </div>
+     <div class="col">
+		<div class="lead">{{ talk.name }}</div>
+  		<div class="text-muted">{{ talk.venue }} {{talk.year}}</div>
+  		<p>{{ talk.content | markdownify }}</p>
+     </div>
+     
+</div>
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+short_name: Timo
+name: Timo Flesch
+position: DPhil Student
+image: timoflesch.png
+website: https://www.psy.ox.ac.uk/team/timo-flesch
+orcid: 0000-0002-1843-9156
+year: 2018
+---
+
+I am investigating the computational mechanisms and neural representations underlying
+continual learning in the human brain. I'm funded by a Medical Science Division Graduate Studentship and co-supervised by [Chris Summerfield](https://www.psy.ox.ac.uk/team/christopher-summerfield) and Andrew Saxe. 
