@@ -3,5 +3,5 @@ short_name: Sebastian
 name: Sebastian Lee
 position: MSc Student
 image: 
-year: 2019
+join_date: 2019-11-1
 ---

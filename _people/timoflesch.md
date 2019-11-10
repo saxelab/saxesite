@@ -5,7 +5,7 @@ position: DPhil Student
 image: timoflesch.png
 website: https://www.psy.ox.ac.uk/team/timo-flesch
 orcid: 0000-0002-1843-9156
-year: 2018
+join_date: 2018-9-1
 ---
 
 I am investigating the computational mechanisms and neural representations underlying

@@ -3,7 +3,7 @@ layout: default
 title: Talks
 ---
 
-{% assign sorted_talks = (site.talks | sort: 'date') | reverse %}
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
 {% for talk in sorted_talks %}
 <div class="row my-5">
      <div class="col-md-3">

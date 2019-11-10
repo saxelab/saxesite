@@ -3,5 +3,5 @@ short_name: Adam
 name: Adam Harris
 position: DPhil Student
 image: 
-year: 2019
+join_date: 2019-11-1
 ---
