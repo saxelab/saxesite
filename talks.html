@@ -3,7 +3,7 @@ layout: default
 title: Talks
 ---
 
-{% assign sorted_talks = site.talks | sort: 'year' | reverse %}
+{% assign sorted_talks = (site.talks | sort: 'date') | reverse %}
 {% for talk in sorted_talks %}
 <div class="row my-5">
      <div class="col-md-3">
@@ -13,7 +13,7 @@ title: Talks
      </div>
      <div class="col">
 		<div class="lead">{{ talk.name }}</div>
-  		<div class="text-muted">{{ talk.venue }} {{talk.year}}</div>
+  		<div class="text-muted">{{ talk.venue }} {{talk.date | date: "%Y" }}</div>
   		<p>{{ talk.content | markdownify }}</p>
      </div>
      
