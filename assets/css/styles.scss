@@ -24,16 +24,15 @@ ol.bibliography { list-style-type: none; }
 
 
 .map-container{
-overflow:hidden;
-padding-bottom:40%;
-position:relative;
-height:0;
+	overflow:hidden;
+	padding-bottom:50%;
+	position:relative;
+	height:0;
 }
 .map-container iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-max-width:800px;
-position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
 }
