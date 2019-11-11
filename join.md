@@ -5,16 +5,16 @@ title: Join
 
 
 
-Many routes to joining the lab require developing a joint proposal with the PI before applying, so be in touch early in the process.
 
+Some routes to joining the lab require developing a joint proposal with the PI before applying, so be in touch early in the process.
 
 #### Postdoctoral researchers
 
 
-**We have one postdoctoral opening in the theory of deep learning available immediately.** Interested applicants should contact the PI with a CV and statement of research interests.
+**We have one postdoctoral opening in the theory of deep learning available immediately.** Interested applicants should contact the PI with a CV and statement of research interests. Full application details will be announced soon.
 
 
-The following are postdoctoral fellowships which can support work in the lab.
+The following fellowships can support work in the lab.
 
 *Any field/interdisciplinary:*
 1. Oxford Junior Research Fellowships. These are announced [here](https://gazette.web.ox.ac.uk/current-jobs-and-vacancies), and refreshed every month. You can also sign up for email notifications.  
@@ -35,9 +35,9 @@ The following are postdoctoral fellowships which can support work in the lab.
 
 
 
-#### Graduate Students
+#### Graduate students
 
-Graduate students can join the lab through a variety of programs.
+Graduate students can join the lab through several programs. 
 1. [Doctoral Program in Psychology](https://www.psy.ox.ac.uk/study/graduate/dphil_EP)
 2. [Doctoral Program in Neuroscience](https://www.neuroscience.ox.ac.uk/1-plus-3-Doctoral-Programme-in-Neuroscience)
 3. [Interdisciplinary Biosciences DTC](http://www.biodtp.ox.ac.uk/dtc.html)
