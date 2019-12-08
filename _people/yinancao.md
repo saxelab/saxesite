@@ -1,7 +1,7 @@
 ---
 short_name: Yinan
 name: Yinan Cao
-position: Postdoc Research Associate
+position: Postdoctoral Research Associate
 image: cao001.jpg
 website: https://www.psy.ox.ac.uk/team/yinan-cao
 join_date: 2019-9-2

@@ -11,6 +11,13 @@ title: People
 
 {% endfor %}
 
+{% assign people = site.people | where:"position","Postdoctoral Research Associate" %}
+{% for person in people %}
+
+  {% include person.html %}
+
+{% endfor %}
+
 {% assign people = site.people | where:"position","DPhil Student" | sort: 'join_date' %}
 {% for person in people %}
 
