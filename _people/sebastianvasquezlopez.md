@@ -2,6 +2,7 @@
 short_name: Sebastian
 name: Vasquez Lopez
 position: Junior Research Fellow
+position_type: postdoc
 image: SVL_photo.jpeg
 orcid: 0000-0003-4899-1221
 googlescholar: https://scholar.google.co.uk/citations?user=hyznWMEAAAAJ&hl=en

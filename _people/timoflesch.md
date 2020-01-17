@@ -2,6 +2,7 @@
 short_name: Timo
 name: Timo Flesch
 position: DPhil Student
+position_type: dphil
 image: timoflesch.png
 website: https://www.psy.ox.ac.uk/team/timo-flesch
 orcid: 0000-0002-1843-9156
