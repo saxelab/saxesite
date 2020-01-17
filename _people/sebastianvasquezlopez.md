@@ -1,6 +1,6 @@
 ---
 short_name: Sebastian
-name: Vasquez Lopez
+name: Sebastian Vasquez Lopez
 position: Junior Research Fellow
 position_type: postdoc
 image: SVL_photo.jpeg
