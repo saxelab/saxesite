@@ -2,7 +2,7 @@
 short_name: Javier
 name: Javier Masís
 position: PhD Candidate (Harvard)
-position_type: phd
+position_type: dphil
 image: javier.jpg
 orcid: 0000-0002-9643-8677
 googlescholar: https://scholar.google.com/citations?user=JnmXaR4AAAAJ&hl=en&oi=ao
