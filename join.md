@@ -11,7 +11,7 @@ Some routes to joining the lab require developing a joint proposal with the PI b
 #### Postdoctoral researchers
 
 
-**We have one postdoctoral opening in the theory of deep learning available immediately.** Interested applicants should contact the PI with a CV and statement of research interests. Full application details will be announced soon.
+**The lab has an open postdoctoral position in the theory of deep learning.** Full application details are [here](https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=145193), deadline 12pm on the 15 Apr 2020.
 
 
 The following fellowships can support work in the lab.
