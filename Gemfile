@@ -10,3 +10,5 @@ gem "jekyll"
 gem "jekyll-scholar"
 gem "jekyll-autoprefixer"
 gem "therubyracer", platforms: :ruby
+gem "bibtex-ruby", ">= 5.1.0"
+
