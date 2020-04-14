@@ -9,6 +9,8 @@ scholar:
   bibliography_template: bib
   replace_strings: true
   repository: assets/papers
+  source: _bibliography
+  bibliography: references.bib
 
 sass:
   sass_dir: _sass
