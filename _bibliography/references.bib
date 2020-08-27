@@ -1,5 +1,21 @@
+
 ---
 ---
+
+@inproceedings{Saxe2020,
+abstract = {Neuroscience research is undergoing a minor revolution. Recent advances in machine learning and artificial intelligence (AI) research have opened up new ways of thinking about neural computation. Many researchers are excited by the possibility that deep neural networks may offer theories of perception, cognition and action for biological brains. This perspective has the potential to radically reshape our approach to understanding neural systems, because the computations performed by deep networks are learned from experience, not endowed by the researcher. If so, how can neuroscientists use deep networks to model and understand biological brains? What is the outlook for neuroscientists who seek to characterise computations or neural codes, or who wish to understand perception, attention, memory, and executive functions? In this Perspective, our goal is to offer a roadmap for systems neuroscience research in the age of deep learning. We discuss the conceptual and methodological challenges of comparing behaviour, learning dynamics, and neural representation in artificial and biological systems. We highlight new research questions that have emerged for neuroscience as a direct consequence of recent advances in machine learning.},
+archivePrefix = {arXiv},
+arxivId = {2004.07580},
+author = {Saxe, A. and Nelli, S. and Summerfield, C.},
+booktitle = {arXiv},
+eprint = {2004.07580},
+file = {:Users/asaxe/Dropbox/Papers/2004.07580.pdf:pdf},
+keywords = {arxiv},
+title = {{If deep learning is the answer, then what is the question?}},
+url = {http://arxiv.org/abs/2004.07580},
+year = {2020}
+}
+
 @article{Richards2019,
 abstract = {Systems neuroscience seeks explanations for how the brain implements a wide variety of perceptual, cognitive and motor tasks. Conversely, artificial intelligence attempts to design computational systems based on the tasks they will have to solve. In artificial neural networks, the three components specified by design are the objective functions, the learning rules and the architectures. With the growing success of deep learning, which utilizes brain-inspired architectures, these three designed components have increasingly become central to how we model, engineer and optimize complex artificial learning systems. Here we argue that a greater focus on these components would also benefit systems neuroscience. We give examples of how this optimization-based framework can drive theoretical and experimental progress in neuroscience. We contend that this principled perspective on systems neuroscience will help to generate more rapid progress.},
 author = {Richards, Blake A. and Lillicrap, Timothy P. and Beaudoin, Philippe and Bengio, Yoshua and Bogacz, Rafal and Christensen, Amelia and Clopath, Claudia and Costa, Rui Ponte and de Berker, Archy and Ganguli, Surya and Gillon, Colleen J. and Hafner, Danijar and Kepecs, Adam and Kriegeskorte, Nikolaus and Latham, Peter and Lindsay, Grace W. and Miller, Kenneth D. and Naud, Richard and Pack, Christopher C. and Poirazi, Panayiota and Roelfsema, Pieter and Sacramento, Jo{\~{a}}o and Saxe, Andrew and Scellier, Benjamin and Schapiro, Anna C. and Senn, Walter and Wayne, Greg and Yamins, Daniel and Zenke, Friedemann and Zylberberg, Joel and Therien, Denis and Kording, Konrad P.},
@@ -46,6 +62,24 @@ url = {http://arxiv.org/abs/1810.10531 http://www.pnas.org/lookup/doi/10.1073/pn
 volume = {116},
 year = {2019}
 }
+@article{Saxe2019a,
+abstract = {The practical successes of deep neural networks have not been matched by theoretical progress that satisfyingly explains their behavior. In this work, we study the information bottleneck (IB) theory of deep learning, which makes three specific claims: first, that deep networks undergo two distinct phases consisting of an initial fitting phase and a subsequent compression phase; second, that the compression phase is causally related to the excellent generalization performance of deep networks; and third, that the compression phase occurs due to the diffusion-like behavior of stochastic gradient descent. Here we show that none of these claims hold true in the general case. Through a combination of analytical results and simulation, we demonstrate that the information plane trajectory is predominantly a function of the neural nonlinearity employed: double-sided saturating nonlinearities like tanh yield a compression phase as neural activations enter the saturation regime, but linear activation functions and single-sided saturating nonlinearities like the widely used ReLU in fact do not. Moreover, we find that there is no evident causal connection between compression and generalization: networks that do not compress are still capable of generalization, and vice versa. Next, we show that the compression phase, when it exists, does not arise from stochasticity in training by demonstrating that we can replicate the IB findings using full batch gradient descent rather than stochastic gradient descent. Finally, we show that when an input domain consists of a subset of task-relevant and task-irrelevant information, hidden representations do compress the task-irrelevant information, although the overall information about the input may monotonically increase with training time, and that this compression happens concurrently with the fitting process rather than during a subsequent compression period.},
+author = {Saxe, A.M. and Bansal, Y. and Dapello, J. and Advani, M. and Kolchinsky, A. and Tracey, B.D. and Cox, D.D.},
+doi = {10.1088/1742-5468/ab3985},
+file = {:Users/asaxe/Dropbox/Papers/Saxe{\_}2019{\_}J.{\_}Stat.{\_}Mech.{\_}2019{\_}124020(1).pdf:pdf},
+issn = {1742-5468},
+journal = {Journal of Statistical Mechanics: Theory and Experiment},
+keywords = {publications},
+month = {dec},
+number = {12},
+pages = {124020},
+publisher = {IOP Publishing},
+title = {{On the information bottleneck theory of deep learning}},
+url = {https://iopscience.iop.org/article/10.1088/1742-5468/ab3985},
+volume = {2019},
+year = {2019}
+}
+
 @inproceedings{Goldt2019,
 abstract = {Deep neural networks achieve stellar generalisation on a variety of problems, despite often being large enough to easily fit all their training data. Here we study the generalisation dynamics of two-layer neural networks in a teacher-student setup, where one network, the student, is trained using stochastic gradient descent (SGD) on data generated by another network, called the teacher. We show how for this problem, the dynamics of SGD are captured by a set of differential equations. In particular, we demonstrate analytically that the generalisation error of the student increases linearly with the network size, with other relevant parameters held constant. Our results indicate that achieving good generalisation in neural networks depends on the interplay of at least the algorithm, its learning rate, the model architecture, and the data set.},
 archivePrefix = {arXiv},
