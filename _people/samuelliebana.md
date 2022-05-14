@@ -1,8 +1,9 @@
 ---
 short_name: Sam
 name: Samuel Liebana
-position: MSc Student
-position_type: msc
+position: DPhil Student
+position_type: dphil
+alum: false
 image: samuelliebana.jpeg
 orcid: 0000-0003-2627-802X
 join_date: 2020-12-18

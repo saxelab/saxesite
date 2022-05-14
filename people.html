@@ -3,31 +3,43 @@ layout: default
 title: People
 ---
 
+{% assign curr_people = site.people | where:"alum","false" %}
 
-{% assign people = site.people | where:"position_type","pi" %}
+{% assign people = curr_people | where:"position_type","pi" %}
 {% for person in people %}
 
   {% include person.html %}
 
 {% endfor %}
 
-{% assign people = site.people | where:"position_type","postdoc" %}
+{% assign people = curr_people | where:"position_type","postdoc" %}
 {% for person in people %}
 
   {% include person.html %}
 
 {% endfor %}
 
-{% assign people = site.people | where:"position_type","dphil" | sort: 'join_date' %}
+{% assign people = curr_people | where:"position_type","dphil" | sort: 'join_date' %}
 {% for person in people %}
 
   {% include person.html %}
 
 {% endfor %}
 
-{% assign people = site.people | where:"position_type","msc" | sort: 'join_date' %}
+{% assign people = curr_people | where:"position_type","msc" | sort: 'join_date' %}
 {% for person in people %}
 
   {% include person.html %}
+
+{% endfor %}
+
+<div class="lead"> Alumni </div>
+			  
+
+{% assign people = site.people | where:"alum","true" | sort: 'join_date' %}
+
+{% for person in people %}
+
+{% include alum.html %}
 
 {% endfor %}

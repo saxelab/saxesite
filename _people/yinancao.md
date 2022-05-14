@@ -3,6 +3,8 @@ short_name: Yinan
 name: Yinan Cao
 position: Postdoctoral Research Associate
 position_type: postdoc
+alum: true
+now: University Medical Center Hamburg
 image: cao001.jpg
 website: https://www.psy.ox.ac.uk/team/yinan-cao
 join_date: 2019-9-2

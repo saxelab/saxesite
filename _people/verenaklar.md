@@ -3,6 +3,7 @@ short_name: Verena
 name: Verena Klar
 position: DPhil Student
 position_type: dphil
+alum: false
 image: verenaklar.jpeg
 website: https://www.psy.ox.ac.uk/team/verena-klar
 join_date: 2020-10-1

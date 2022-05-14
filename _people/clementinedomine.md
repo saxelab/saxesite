@@ -3,6 +3,7 @@ short_name: Clementine
 name: Clementine Domine
 position: DPhil Student
 position_type: dphil
+alum: false
 image: domine_portrait.jpg
 website: https://clementinedomine.github.io
 join_date: 2021-5-1
