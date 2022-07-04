@@ -13,7 +13,7 @@ We currently (14/5/2022) have openings for postdoctoral researchers, research te
 Postdoctoral researchers
 {: .lead}
 
-**The lab has several open postdoctoral positions for theory-driven experimentalists.** We aim to build a lab that blurs the distinction between theory and experiment to sharpen and accelerate the theory-experiment loop. Experiments will focus on rodent systems neuroscience and be undertaken in the Mrsic-Flogel, Hofer, Duan, Erlich, or Akrami labs at SWC; and Behrens, Packer, or Lak labs at Oxford, as appropriate for the question. Full application details to come, contact Andrew in the first instance.
+**The lab has several open postdoctoral positions for theory-driven experimentalists.** We aim to build a lab that blurs the distinction between theory and experiment to sharpen and accelerate the theory-experiment loop. Experiments will focus on rodent systems neuroscience and be undertaken in the Mrsic-Flogel, Hofer, Duan, Erlich, or Akrami labs at SWC; and Behrens, Packer, or Lak labs at Oxford, as appropriate for the question. Contact Andrew in the first instance.
 
 **The lab has one open postdoctoral position in the theory of deep learning.** Full application details to come, contact Andrew in the first instance.
 
