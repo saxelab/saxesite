@@ -1,0 +1,22 @@
+---
+layout: default
+title: LabMeetings
+---
+
+{% assign sorted_seminars = site.seminars | sort: 'date' | reverse %}
+{% for seminars in sorted_seminars %}
+<div class="row my-5">
+     <div class="col-md-3">
+     	<div class="embed-responsive embed-responsive-16by9">
+	  		<iframe class="embed-responsive-item" src="{{seminars.embedurl}}" allowfullscreen></iframe>
+		</div>
+     </div>
+     <div class="col">
+		<div class="lead">{{ seminars.name }}</div>
+  		<div class="text-muted">{{seminars.date | date: "%Y" }}</div>
+      <div class="text-muted">{{seminars.description | date: "%Y" }}</div>
+  		<p>{{ seminars.content | markdownify }}</p>
+     </div>
+     
+</div>
+{% endfor %}
