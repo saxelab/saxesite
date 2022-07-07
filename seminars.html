@@ -12,7 +12,7 @@ title: LabMeetings
 		</div>
      </div>
      <div class="col">
-		<div class="lead">{{ seminars.name }}</div>
+		<div class="lead">{{ seminars.speaker }} - {{ seminars.title }}</div>
   		<div class="text-muted">{{seminars.date | date: "%Y" }}</div>
       		<p>{{ seminars.description | markdownify }}</p>
      </div>
