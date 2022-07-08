@@ -1,8 +1,7 @@
 ---
 speaker: Lorenzo Giambagli
 title: Pruning DNN
-date: 14/07/2022
-description: Lorem ipsum dolor sit amet...
+description: Lorem ipsum dolor sit amen
 embedurl: 
 private: false
 ---
