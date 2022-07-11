@@ -56,5 +56,5 @@ Our theoretical understanding of deep learning has not kept pace with its empiri
 
 ------------
 
-![4](https://user-images.githubusercontent.com/1321193/178050404-33ee4e79-0a40-4d19-8bc3-4c16948b78b0.png)
+<img width="1297" alt="1" src="https://user-images.githubusercontent.com/1321193/178301270-9ec76a9b-3818-4d27-affb-a20e599f0834.png">
 
