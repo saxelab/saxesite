@@ -39,7 +39,7 @@ Our theoretical understanding of deep learning has not kept pace with its empiri
 1. [Paper](https://proceedings.mlr.press/v162/saxe22a.html)
 2. [Code](https://github.com/facebookresearch/gated-dln)
 3. [Slides](slides.pdf)
-4. [Recording]()
+4. [Recording](https://youtu.be/MrXDkRQWu_E)
 
 
 ## Results
