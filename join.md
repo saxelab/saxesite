@@ -10,11 +10,6 @@ We are committed to making our lab open, inclusive and equal and welcome candida
 ![Lab group photo, Isle of Wight](/assets/images/group_photo_isle_of_wight.jpeg){: width="500" }
 
 
-Postdoctoral researchers
-{: .lead}
-
-*We are currently not looking for postdocs. Any open position will be posted here.*
-
 Graduate students
 {: .lead}
 
