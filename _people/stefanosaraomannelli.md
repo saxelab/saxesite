@@ -13,5 +13,5 @@ How is data structure affecting the learning dynamics? Can we design learning pa
 Can prior knowledge help in learning? How? 
 My research lies at the intersection between theoretical machine learning and neuroscience, and gravitates around these questions. 
 In few words, I like to construct simple models that capture emerging phenomena in learning by identifying few key relevant parameters. 
-Using methods from statistical physics, I analyze such models and obtain exact equations that lead to a quantitave insight on the underlying process.
+Using methods from statistical physics, I analyze such models and obtain exact equations that lead to a quantitative insight on the underlying process.
 
