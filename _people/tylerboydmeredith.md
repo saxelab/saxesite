@@ -7,7 +7,6 @@ alum: false
 image: tylerboydmeredith.png
 orcid: 0000-0003-2304-8851
 googlescholar: https://scholar.google.com/citations?user=CNECTK4AAAAJ&hl=en
-website: /people/tylerboydmeredith/
 join_date: 2023-06-26
 ---
 
