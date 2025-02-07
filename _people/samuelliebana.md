@@ -10,6 +10,6 @@ googlescholar: https://scholar.google.com/citations?user=4AotP6EAAAAJ&hl=en
 join_date: 2020-12-18
 ---
 
-How do we learn over long timescales? This often involves developing increasingly better strategies (learning stages) or learning multiple skills in succession (continual learning). In addition, we frequently learn in social settings where individuals develop different skills and can collectively solve complex problems (collective learning). My research investigates such individual and collective long-term learning from both theoretical and experimental perspectives.
+Learning over long timescales often involves developing increasingly effective strategies or learning multiple skills. In addition, we frequently learn in social settings where individuals can specialise differently and collectively solve complex problems. My research investigates such individual and collective long-term learning from both theoretical and experimental perspectives.
 
-I am a Research Fellow in Theoretical Neuroscience at the Gatsby Computational Neuroscience Unit (UCL).
+I am a Research Fellow in Theoretical Neuroscience at the Gatsby Computational Neuroscience Unit (UCL) funded by the Human Frontier Science Program (HFSP) and Gatsby Charitable Foundation.
