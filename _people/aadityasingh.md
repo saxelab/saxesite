@@ -3,7 +3,7 @@ short_name: Aaditya
 name: Aaditya K Singh
 position: PhD Student
 position_type: dphil
-alum: false
+alum: true
 image: aadityasingh.jpeg
 googlescholar: https://scholar.google.com/citations?user=9OPKqmMAAAAJ&hl=en
 website: https://github.com/aadityasingh

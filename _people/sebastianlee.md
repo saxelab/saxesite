@@ -3,7 +3,7 @@ short_name: Sebastian
 name: Sebastian Lee
 position: DPhil Student
 position_type: dphil
-alum: false
+alum: true
 image: seblee.jpg
 website: https://seblee97.github.io/
 join_date: 2019-11-1

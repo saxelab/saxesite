@@ -3,7 +3,7 @@ short_name: Lukas
 name: Lukas Braun
 position: DPhil Student
 position_type: dphil
-alum: false
+alum: true
 image: lukasbraun.jpg
 website: https://lukasbraun.com/
 join_date: 2020-10-1
