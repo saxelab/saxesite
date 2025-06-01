@@ -4,7 +4,7 @@ name: Rachel Swanson
 position: Postdoctoral Researcher 
 position_type: postdoc 
 alum: false
-image: rachelswanson.jpg
+image: rachelaswanson.jpg
 website: 
 googlescholar: https://scholar.google.com/citations?user=F3BZQCYAAAAJ=en
 join_date: 2024-03-01
