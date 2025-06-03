@@ -18,24 +18,10 @@
 @article{zhang2025relu,
   title={When Are Bias-Free ReLU Networks Effectively Linear Networks?},
   author={Zhang, Yedi and Saxe, Andrew M and Latham, Peter E},
+  year = {2025},
   journal={Transactions on Machine Learning Research},
   url = {https://openreview.net/forum?id=Ucpfdn66k2},
   abstract = {We investigate the implications of removing bias in ReLU networks regarding their expressivity and learning dynamics. We first show that two-layer bias-free ReLU networks have limited expressivity: the only odd function two-layer bias-free ReLU networks can express is a linear one. We then show that, under symmetry conditions on the data, these networks have the same learning dynamics as linear networks. This enables us to give analytical time-course solutions to certain two-layer bias-free (leaky) ReLU networks outside the lazy learning regime. While deep bias-free ReLU networks are more expressive than their two-layer counterparts, they still share a number of similarities with deep linear networks. These similarities enable us to leverage insights from linear networks to understand certain ReLU networks. Overall, our results show that some properties previously established for bias-free ReLU networks arise due to equivalence to linear networks.}
-}
-
-@article{lowe2025regularised,
-    doi = {10.1371/journal.pcbi.1012505},
-    author = {Löwe, Anika T. AND Touzo, Léo AND Muhle-Karbe, Paul S. AND Saxe, Andrew M. AND Summerfield, Christopher AND Schuck, Nicolas W.},
-    journal = {PLOS Computational Biology},
-    publisher = {Public Library of Science},
-    title = {Abrupt and spontaneous strategy switches emerge in simple regularised neural networks},
-    year = {2024},
-    month = {10},
-    volume = {20},
-    url = {https://doi.org/10.1371/journal.pcbi.1012505},
-    pages = {1-29},
-    abstract = {Humans sometimes have an insight that leads to a sudden and drastic performance improvement on the task they are working on. Sudden strategy adaptations are often linked to insights, considered to be a unique aspect of human cognition tied to complex processes such as creativity or meta-cognitive reasoning. Here, we take a learning perspective and ask whether insight-like behaviour can occur in simple artificial neural networks, even when the models only learn to form input-output associations through gradual gradient descent. We compared learning dynamics in humans and regularised neural networks in a perceptual decision task that included a hidden regularity to solve the task more efficiently. Our results show that only some humans discover this regularity, and that behaviour is marked by a sudden and abrupt strategy switch that reflects an aha-moment. Notably, we find that simple neural networks with a gradual learning rule and a constant learning rate closely mimicked behavioural characteristics of human insight-like switches, exhibiting delay of insight, suddenness and selective occurrence in only some networks. Analyses of network architectures and learning dynamics revealed that insight-like behaviour crucially depended on a regularised gating mechanism and noise added to gradient updates, which allowed the networks to accumulate “silent knowledge” that is initially suppressed by regularised gating. This suggests that insight-like behaviour can arise from gradual learning in simple neural networks, where it reflects the combined influences of noise, gating and regularisation. These results have potential implications for more complex systems, such as the brain, and guide the way for future insight research.},
-    number = {10}
 }
 
 @inproceedings{domine2025lazy,
@@ -58,6 +44,21 @@ abstract={Biological and artificial neural networks develop internal representat
  volume = {37},
  year = {2024},
  abstract={Localized receptive fields—neurons that are selective for certain contiguous spatiotemporal features of their input—populate early sensory regions of the mammalian brain. Unsupervised learning algorithms that optimize explicit sparsity or independence criteria replicate features of these localized receptive fields, but fail to explain directly how localization arises through learning without efficient coding, as occurs in early layers of deep neural networks and might occur in early sensory regions of biological systems. We consider an alternative model in which localized receptive fields emerge without explicit top-down efficiency constraints—a feed-forward neural network trained on a data model inspired by the structure of natural images. Previous work identified the importance of non-Gaussian statistics to localization in this setting but left open questions about the mechanisms driving dynamical emergence. We address these questions by deriving the effective learning dynamics for a single nonlinear neuron, making precise how higher-order statistical properties of the input data drive emergent localization, and we demonstrate that the predictions of these effective dynamics extend to the many-neuron setting. Our analysis provides an alternative explanation for the ubiquity of localization as resulting from the nonlinear dynamics of learning in neural circuits.}
+}
+
+@article{lowe2025regularised,
+    doi = {10.1371/journal.pcbi.1012505},
+    author = {Löwe, Anika T. AND Touzo, Léo AND Muhle-Karbe, Paul S. AND Saxe, Andrew M. AND Summerfield, Christopher AND Schuck, Nicolas W.},
+    journal = {PLOS Computational Biology},
+    publisher = {Public Library of Science},
+    title = {Abrupt and spontaneous strategy switches emerge in simple regularised neural networks},
+    year = {2024},
+    month = {10},
+    volume = {20},
+    url = {https://doi.org/10.1371/journal.pcbi.1012505},
+    pages = {1-29},
+    abstract = {Humans sometimes have an insight that leads to a sudden and drastic performance improvement on the task they are working on. Sudden strategy adaptations are often linked to insights, considered to be a unique aspect of human cognition tied to complex processes such as creativity or meta-cognitive reasoning. Here, we take a learning perspective and ask whether insight-like behaviour can occur in simple artificial neural networks, even when the models only learn to form input-output associations through gradual gradient descent. We compared learning dynamics in humans and regularised neural networks in a perceptual decision task that included a hidden regularity to solve the task more efficiently. Our results show that only some humans discover this regularity, and that behaviour is marked by a sudden and abrupt strategy switch that reflects an aha-moment. Notably, we find that simple neural networks with a gradual learning rule and a constant learning rate closely mimicked behavioural characteristics of human insight-like switches, exhibiting delay of insight, suddenness and selective occurrence in only some networks. Analyses of network architectures and learning dynamics revealed that insight-like behaviour crucially depended on a regularised gating mechanism and noise added to gradient updates, which allowed the networks to accumulate “silent knowledge” that is initially suppressed by regularised gating. This suggests that insight-like behaviour can arise from gradual learning in simple neural networks, where it reflects the combined influences of noise, gating and regularisation. These results have potential implications for more complex systems, such as the brain, and guide the way for future insight research.},
+    number = {10}
 }
 
 @misc{rubruck2024early,
@@ -164,20 +165,6 @@ abstract={Biological and artificial neural networks develop internal representat
 	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Quantitative Biology - Neurons and Cognition},
 }
 
-@misc{patel2023rl,
-	title = {The {RL} {Perceptron}: {Generalisation} {Dynamics} of {Policy} {Learning} in {High} {Dimensions}},
-	shorttitle = {The {RL} {Perceptron}},
-	url = {http://arxiv.org/abs/2306.10404},
-	abstract = {Reinforcement learning (RL) algorithms have proven transformative in a range of domains. To tackle real-world domains, these systems often use neural networks to learn policies directly from pixels or other high-dimensional sensory input. By contrast, much theory of RL has focused on discrete state spaces or worst-case analysis, and fundamental questions remain about the dynamics of policy learning in high-dimensional settings. Here, we propose a solvable high-dimensional model of RL that can capture a variety of learning protocols, and derive its typical dynamics as a set of closed-form ordinary differential equations (ODEs). We derive optimal schedules for the learning rates and task difficulty - analogous to annealing schemes and curricula during training in RL - and show that the model exhibits rich behaviour, including delayed learning under sparse rewards; a variety of learning regimes depending on reward baselines; and a speed-accuracy trade-off driven by reward stringency. Experiments on variants of the Procgen game "Bossfight" and Arcade Learning Environment game "Pong" also show such a speed-accuracy trade-off in practice. Together, these results take a step towards closing the gap between theory and practice in high-dimensional RL.},
-	urldate = {2024-10-12},
-	publisher = {arXiv},
-	author = {Patel, Nishil and Lee, Sebastian and Mannelli, Stefano Sarao and Goldt, Sebastian and Saxe, Andrew},
-	month = sep,
-	year = {2023},
-	note = {arXiv:2306.10404},
-	keywords = {Computer Science - Machine Learning, Condensed Matter - Disordered Systems and Neural Networks},
-}
-
 @misc{jarvis2024specializationa,
 	title = {On {The} {Specialization} of {Neural} {Modules}},
 	url = {http://arxiv.org/abs/2409.14981},
@@ -217,44 +204,56 @@ abstract={Biological and artificial neural networks develop internal representat
 	pages = {21113--21127},
 }
 
-@inproceedings{saxe2022neurala,
-	title = {The neural race reduction: {Dynamics} of abstraction in gated networks},
-	shorttitle = {The neural race reduction},
-	url = {https://proceedings.mlr.press/v162/saxe22a.html},
-	urldate = {2024-10-12},
-	booktitle = {International {Conference} on {Machine} {Learning}},
-	publisher = {PMLR},
-	author = {Saxe, Andrew and Sodhani, Shagun and Lewallen, Sam Jay},
-	year = {2022},
-	pages = {19287--19309},
+@InProceedings{saxe2022neurala,
+  title = 	 {The Neural Race Reduction: Dynamics of Abstraction in Gated Networks},
+  author =       {Saxe, Andrew and Sodhani, Shagun and Lewallen, Sam Jay},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {19287--19309},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/saxe22a/saxe22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/saxe22a.html},
+  abstract = 	 {Our theoretical understanding of deep learning has not kept pace with its empirical success. While network architecture is known to be critical, we do not yet understand its effect on learned representations and network behavior, or how this architecture should reflect task structure.In this work, we begin to address this gap by introducing the Gated Deep Linear Network framework that schematizes how pathways of information flow impact learning dynamics within an architecture. Crucially, because of the gating, these networks can compute nonlinear functions of their input. We derive an exact reduction and, for certain cases, exact solutions to the dynamics of learning. Our analysis demonstrates that the learning dynamics in structured networks can be conceptualized as a neural race with an implicit bias towards shared representations, which then govern the model’s ability to systematically generalize, multi-task, and transfer. We validate our key insights on naturalistic datasets and with relaxed assumptions. Taken together, our work gives rise to general hypotheses relating neural architecture to learning and provides a mathematical approach towards understanding the design of more complex architectures and the role of modularity and compositionality in solving real-world problems. The code and results are available at https://www.saxelab.org/gated-dln.}
 }
 
-@misc{lee2022maslows,
-	title = {Maslow's {Hammer} for {Catastrophic} {Forgetting}: {Node} {Re}-{Use} vs {Node} {Activation}},
-	shorttitle = {Maslow's {Hammer} for {Catastrophic} {Forgetting}},
-	url = {http://arxiv.org/abs/2205.09029},
-	abstract = {Continual learning - learning new tasks in sequence while maintaining performance on old tasks - remains particularly challenging for artificial neural networks. Surprisingly, the amount of forgetting does not increase with the dissimilarity between the learned tasks, but appears to be worst in an intermediate similarity regime. In this paper we theoretically analyse both a synthetic teacher-student framework and a real data setup to provide an explanation of this phenomenon that we name Maslow's hammer hypothesis. Our analysis reveals the presence of a trade-off between node activation and node re-use that results in worst forgetting in the intermediate regime. Using this understanding we reinterpret popular algorithmic interventions for catastrophic interference in terms of this trade-off, and identify the regimes in which they are most effective.},
-	urldate = {2024-10-12},
-	publisher = {arXiv},
-	author = {Lee, Sebastian and Mannelli, Stefano Sarao and Clopath, Claudia and Goldt, Sebastian and Saxe, Andrew},
-	month = may,
-	year = {2022},
-	note = {arXiv:2205.09029},
-	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+@InProceedings{lee2022maslows,
+  title = 	 {Maslow’s Hammer in Catastrophic Forgetting: Node Re-Use vs. Node Activation},
+  author =       {Lee, Sebastian and Mannelli, Stefano Sarao and Clopath, Claudia and Goldt, Sebastian and Saxe, Andrew},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {12455--12477},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/lee22g/lee22g.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/lee22g.html},
+  abstract = 	 {Continual learning—learning new tasks in sequence while maintaining performance on old tasks—remains particularly challenging for artificial neural networks. Surprisingly, the amount of forgetting does not increase with the dissimilarity between the learned tasks, but appears to be worst in an intermediate similarity regime. In this paper we theoretically analyse both a synthetic teacher-student framework and a real data setup to provide an explanation of this phenomenon that we name Maslow’s Hammer hypothesis. Our analysis reveals the presence of a trade-off between node activation and node re-use that results in worst forgetting in the intermediate regime. Using this understanding we reinterpret popular algorithmic interventions for catastrophic interference in terms of this trade-off, and identify the regimes in which they are most effective.}
 }
 
-@misc{singh2023know,
-	title = {Know your audience: specializing grounded language models with listener subtraction},
-	shorttitle = {Know your audience},
-	url = {http://arxiv.org/abs/2206.08349},
-	abstract = {Effective communication requires adapting to the idiosyncrasies of each communicative context--such as the common ground shared with each partner. Humans demonstrate this ability to specialize to their audience in many contexts, such as the popular game Dixit. We take inspiration from Dixit to formulate a multi-agent image reference game where a (trained) speaker model is rewarded for describing a target image such that one (pretrained) listener model can correctly identify it among distractors, but another listener cannot. To adapt, the speaker must exploit differences in the knowledge it shares with the different listeners. We show that finetuning an attention-based adapter between a CLIP vision encoder and a large language model in this contrastive, multi-agent setting gives rise to context-dependent natural language specialization from rewards only, without direct supervision. Through controlled experiments, we show that training a speaker with two listeners that perceive differently, using our method, allows the speaker to adapt to the idiosyncracies of the listeners. Furthermore, we show zero-shot transfer of the specialization to real-world data. Our experiments demonstrate a method for specializing grounded language models without direct supervision and highlight the interesting research challenges posed by complex multi-agent communication.},
-	urldate = {2024-10-12},
-	publisher = {arXiv},
-	author = {Singh, Aaditya K. and Ding, David and Saxe, Andrew and Hill, Felix and Lampinen, Andrew K.},
-	month = may,
-	year = {2023},
-	note = {arXiv:2206.08349},
-	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+@inproceedings{singh2023know,
+    title = "Know your audience: specializing grounded language models with listener subtraction",
+    author = "Singh, Aaditya K  and
+      Ding, David  and
+      Saxe, Andrew  and
+      Hill, Felix  and
+      Lampinen, Andrew",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.eacl-main.279/",
+    doi = "10.18653/v1/2023.eacl-main.279",
+    pages = "3884--3911",
+    abstract = "Effective communication requires adapting to the idiosyncrasies of each communicative context{---}such as the common ground shared with each partner. Humans demonstrate this ability to specialize to their audience in many contexts, such as the popular game Dixit. We take inspiration from Dixit to formulate a multi-agent image reference game where a (trained) speaker model is rewarded for describing a target image such that one (pretrained) listener model can correctly identify it among distractors, but another listener cannot. To adapt, the speaker must exploit differences in the knowledge it shares with the different listeners. We show that finetuning an attention-based adapter between a CLIP vision encoder and a large language model in this contrastive, multi-agent setting gives rise to context-dependent natural language specialization from rewards only, without direct supervision. Through controlled experiments, we show that training a speaker with two listeners that perceive differently, using our method, allows the speaker to adapt to the idiosyncracies of the listeners. Furthermore, we show zero-shot transfer of the specialization to real-world data. Our experiments demonstrate a method for specializing grounded language models without direct supervision and highlight the interesting research challenges posed by complex multi-agent communication."
 }
 
 @inproceedings{lee2021continuala,
@@ -267,6 +266,18 @@ abstract={Biological and artificial neural networks develop internal representat
 	author = {Lee, Sebastian and Goldt, Sebastian and Saxe, Andrew},
 	year = {2021},
 	pages = {6109--6119},
+}
+
+@article{flesch2022orthogonal,
+  title={Orthogonal representations for robust context-dependent task performance in brains and neural networks},
+  author={Flesch, Timo and Juechems, Keno and Dumbalska, Tsvetomira and Saxe, Andrew and Summerfield, Christopher},
+  journal={Neuron},
+  volume={110},
+  number={7},
+  pages={1258--1270},
+  year={2022},
+  publisher={Elsevier},
+  abstract={How do neural populations code for multiple, potentially conflicting tasks? Here we used computational simulations involving neural networks to define “lazy” and “rich” coding solutions to this context-dependent decision-making problem, which trade off learning speed for robustness. During lazy learning the input dimensionality is expanded by random projections to the network hidden layer, whereas in rich learning hidden units acquire structured representations that privilege relevant over irrelevant features. For context-dependent decision-making, one rich solution is to project task representations onto low-dimensional and orthogonal manifolds. Using behavioral testing and neuroimaging in humans and analysis of neural signals from macaque prefrontal cortex, we report evidence for neural coding patterns in biological brains whose dimensionality and neural geometry are consistent with the rich learning regime.}
 }
 
 @article{saxe2021ifa,
@@ -282,16 +293,25 @@ abstract={Biological and artificial neural networks develop internal representat
 	pages = {55--67},
 }
 
+@article{advani2020highdimensional,
+	title = {High-dimensional dynamics of generalization error in neural networks},
+	volume = {132},
+	url = {https://www.sciencedirect.com/science/article/pii/S0893608020303117},
+	urldate = {2024-10-12},
+	journal = {Neural Networks},
+	author = {Advani, Madhu S. and Saxe, Andrew M. and Sompolinsky, Haim},
+	year = {2020},
+	note = {Publisher: Elsevier},
+	pages = {428--446},
+}
+
 @article{saxe2019mathematicalc,
 	title = {A mathematical theory of semantic development in deep neural networks},
 	volume = {116},
 	issn = {0027-8424, 1091-6490},
 	url = {https://pnas.org/doi/full/10.1073/pnas.1820226116},
 	doi = {10.1073/pnas.1820226116},
-	abstract = {Significance
-            Over the course of development, humans learn myriad facts about items in the world, and naturally group these items into useful categories and structures. This semantic knowledge is essential for diverse behaviors and inferences in adulthood. How is this richly structured semantic knowledge acquired, organized, deployed, and represented by neuronal networks in the brain? We address this question by studying how the nonlinear learning dynamics of deep linear networks acquires information about complex environmental structures. Our results show that this deep learning dynamics can self-organize emergent hidden representations in a manner that recapitulates many empirical phenomena in human semantic development. Such deep networks thus provide a mathematically tractable window into the development of internal neural representations through experience.
-          , 
-            An extensive body of empirical research has revealed remarkable regularities in the acquisition, organization, deployment, and neural representation of human semantic knowledge, thereby raising a fundamental conceptual question: What are the theoretical principles governing the ability of neural networks to acquire, organize, and deploy abstract knowledge by integrating across many individual experiences? We address this question by mathematically analyzing the nonlinear dynamics of learning in deep linear networks. We find exact solutions to this learning dynamics that yield a conceptual explanation for the prevalence of many disparate phenomena in semantic cognition, including the hierarchical differentiation of concepts through rapid developmental transitions, the ubiquity of semantic illusions between such transitions, the emergence of item typicality and category coherence as factors controlling the speed of semantic processing, changing patterns of inductive projection over development, and the conservation of semantic similarity in neural representations across species. Thus, surprisingly, our simple neural model qualitatively recapitulates many diverse regularities underlying semantic development, while providing analytic insight into how the statistical structure of an environment can interact with nonlinear deep-learning dynamics to give rise to these regularities.},
+	abstract = {An extensive body of empirical research has revealed remarkable regularities in the acquisition, organization, deployment, and neural representation of human semantic knowledge, thereby raising a fundamental conceptual question: What are the theoretical principles governing the ability of neural networks to acquire, organize, and deploy abstract knowledge by integrating across many individual experiences? We address this question by mathematically analyzing the nonlinear dynamics of learning in deep linear networks. We find exact solutions to this learning dynamics that yield a conceptual explanation for the prevalence of many disparate phenomena in semantic cognition, including the hierarchical differentiation of concepts through rapid developmental transitions, the ubiquity of semantic illusions between such transitions, the emergence of item typicality and category coherence as factors controlling the speed of semantic processing, changing patterns of inductive projection over development, and the conservation of semantic similarity in neural representations across species. Thus, surprisingly, our simple neural model qualitatively recapitulates many diverse regularities underlying semantic development, while providing analytic insight into how the statistical structure of an environment can interact with nonlinear deep-learning dynamics to give rise to these regularities.},
 	language = {en},
 	number = {23},
 	urldate = {2024-10-12},
@@ -300,19 +320,6 @@ abstract={Biological and artificial neural networks develop internal representat
 	month = jun,
 	year = {2019},
 	pages = {11537--11546},
-}
-
-@misc{goldt2019generalisation,
-	title = {Generalisation dynamics of online learning in over-parameterised neural networks},
-	url = {http://arxiv.org/abs/1901.09085},
-	abstract = {Deep neural networks achieve stellar generalisation on a variety of problems, despite often being large enough to easily fit all their training data. Here we study the generalisation dynamics of two-layer neural networks in a teacher-student setup, where one network, the student, is trained using stochastic gradient descent (SGD) on data generated by another network, called the teacher. We show how for this problem, the dynamics of SGD are captured by a set of differential equations. In particular, we demonstrate analytically that the generalisation error of the student increases linearly with the network size, with other relevant parameters held constant. Our results indicate that achieving good generalisation in neural networks depends on the interplay of at least the algorithm, its learning rate, the model architecture, and the data set.},
-	urldate = {2024-10-12},
-	publisher = {arXiv},
-	author = {Goldt, Sebastian and Advani, Madhu S. and Saxe, Andrew M. and Krzakala, Florent and Zdeborová, Lenka},
-	month = jan,
-	year = {2019},
-	note = {arXiv:1901.09085},
-	keywords = {Computer Science - Machine Learning, Condensed Matter - Disordered Systems and Neural Networks, Condensed Matter - Statistical Mechanics, Statistics - Machine Learning},
 }
 
 @misc{goldt2019generalisationa,
@@ -424,69 +431,17 @@ abstract={Biological and artificial neural networks develop internal representat
 }
 
 @article{monajemi2013deterministica,
-	title = {Deterministic matrices matching the compressed sensing phase transitions of {Gaussian} random matrices},
-	volume = {110},
-	issn = {0027-8424, 1091-6490},
-	url = {https://pnas.org/doi/full/10.1073/pnas.1219540110},
-	doi = {10.1073/pnas.1219540110},
-	abstract = {In compressed sensing, one takes
-              
-                
-              
-              samples of an
-              N
-              -dimensional vector
-              
-                
-              
-              using an
-              
-                
-              
-              matrix
-              A
-              , obtaining undersampled measurements
-              
-                
-              
-              . For random matrices with independent standard Gaussian entries, it is known that, when
-              
-                
-              
-              is
-              k
-              -sparse, there is a precisely determined phase transition: for a certain region in the (
-              
-                
-              
-              ,
-              
-                
-              
-              )-phase diagram, convex optimization
-              
-                
-              
-              typically finds the sparsest solution, whereas outside that region, it typically fails. It has been shown empirically that the same property—with the same phase transition location—holds for a wide range of non-Gaussian random matrix ensembles. We report extensive experiments showing that the Gaussian phase transition also describes numerous deterministic matrices, including Spikes and Sines, Spikes and Noiselets, Paley Frames, Delsarte-Goethals Frames, Chirp Sensing Matrices, and Grassmannian Frames. Namely, for each of these deterministic matrices in turn, for a typical
-              k
-              -sparse object, we observe that convex optimization is successful over a region of the phase diagram that coincides with the region known for Gaussian random matrices. Our experiments considered coefficients constrained to
-              
-                
-              
-              for four different sets
-              
-                
-              
-              , and the results establish our finding for each of the four associated phase transitions.},
-	language = {en},
-	number = {4},
-	urldate = {2024-10-12},
-	journal = {Proceedings of the National Academy of Sciences},
-	author = {Monajemi, Hatef and Jafarpour, Sina and Gavish, Matan and {Stat 330/CME 362 Collaboration} and Donoho, David L. and Ambikasaran, Sivaram and Bacallado, Sergio and Bharadia, Dinesh and Chen, Yuxin and Choi, Young and Chowdhury, Mainak and Chowdhury, Soham and Damle, Anil and Fithian, Will and Goetz, Georges and Grosenick, Logan and Gross, Sam and Hills, Gage and Hornstein, Michael and Lakkam, Milinda and Lee, Jason and Li, Jian and Liu, Linxi and Sing-Long, Carlos and Marx, Mike and Mittal, Akshay and Monajemi, Hatef and No, Albert and Omrani, Reza and Pekelis, Leonid and Qin, Junjie and Raines, Kevin and Ryu, Ernest and Saxe, Andrew and Shi, Dai and Siilats, Keith and Strauss, David and Tang, Gary and Wang, Chaojun and Zhou, Zoey and Zhu, Zhen},
-	month = jan,
-	year = {2013},
-	pages = {1181--1186},
-}
+author = {Hatef Monajemi  and Sina Jafarpour  and Matan Gavish  and Stat 330/CME 362 Collaboration and David L. Donoho  and Sivaram Ambikasaran  and Sergio Bacallado  and Dinesh Bharadia  and Yuxin Chen  and Young Choi  and Mainak Chowdhury  and Soham Chowdhury  and Anil Damle  and Will Fithian  and Georges Goetz  and Logan Grosenick  and Sam Gross  and Gage Hills  and Michael Hornstein  and Milinda Lakkam  and Jason Lee  and Jian Li  and Linxi Liu  and Carlos Sing-Long  and Mike Marx  and Akshay Mittal  and Hatef Monajemi  and Albert No  and Reza Omrani  and Leonid Pekelis  and Junjie Qin  and Kevin Raines  and Ernest Ryu  and Andrew Saxe  and Dai Shi  and Keith Siilats  and David Strauss  and Gary Tang  and Chaojun Wang  and Zoey Zhou  and Zhen Zhu },
+title = {Deterministic matrices matching the compressed sensing phase transitions of Gaussian random matrices},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {110},
+number = {4},
+pages = {1181-1186},
+year = {2013},
+doi = {10.1073/pnas.1219540110},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.1219540110},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.1219540110},
+abstract = {In compressed sensing, one takes  samples of an N-dimensional vector  using an  matrix A, obtaining undersampled measurements . For random matrices with independent standard Gaussian entries, it is known that, when  is k-sparse, there is a precisely determined phase transition: for a certain region in the (,)-phase diagram, convex optimization  typically finds the sparsest solution, whereas outside that region, it typically fails. It has been shown empirically that the same property—with the same phase transition location—holds for a wide range of non-Gaussian random matrix ensembles. We report extensive experiments showing that the Gaussian phase transition also describes numerous deterministic matrices, including Spikes and Sines, Spikes and Noiselets, Paley Frames, Delsarte-Goethals Frames, Chirp Sensing Matrices, and Grassmannian Frames. Namely, for each of these deterministic matrices in turn, for a typical k-sparse object, we observe that convex optimization is successful over a region of the phase diagram that coincides with the region known for Gaussian random matrices. Our experiments considered coefficients constrained to  for four different sets , and the results establish our finding for each of the four associated phase transitions.}}
 
 @misc{furlanello2016activea,
 	title = {Active {Long} {Term} {Memory} {Networks}},
@@ -499,19 +454,6 @@ abstract={Biological and artificial neural networks develop internal representat
 	year = {2016},
 	note = {arXiv:1606.02355},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
-}
-
-@misc{goodfellow2015qualitatively,
-	title = {Qualitatively characterizing neural network optimization problems},
-	url = {http://arxiv.org/abs/1412.6544},
-	abstract = {Training neural networks involves solving large-scale non-convex optimization problems. This task has long been believed to be extremely difficult, with fear of local minima and other obstacles motivating a variety of schemes to improve optimization, such as unsupervised pretraining. However, modern neural networks are able to achieve negligible training error on complex tasks, using only direct training with stochastic gradient descent. We introduce a simple analysis technique to look for evidence that such networks are overcoming local optima. We find that, in fact, on a straight path from initialization to solution, a variety of state of the art neural networks never encounter any significant obstacles.},
-	urldate = {2024-10-12},
-	publisher = {arXiv},
-	author = {Goodfellow, Ian J. and Vinyals, Oriol and Saxe, Andrew M.},
-	month = may,
-	year = {2015},
-	note = {arXiv:1412.6544},
-	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
 }
 
 @misc{goodfellow2015qualitativelyc,
@@ -562,16 +504,4 @@ abstract={Biological and artificial neural networks develop internal representat
 	urldate = {2024-10-12},
 	author = {Saxe, Andrew M.},
 	year = {2013},
-}
-
-@article{advani2020highdimensional,
-	title = {High-dimensional dynamics of generalization error in neural networks},
-	volume = {132},
-	url = {https://www.sciencedirect.com/science/article/pii/S0893608020303117},
-	urldate = {2024-10-12},
-	journal = {Neural Networks},
-	author = {Advani, Madhu S. and Saxe, Andrew M. and Sompolinsky, Haim},
-	year = {2020},
-	note = {Publisher: Elsevier},
-	pages = {428--446},
 }
