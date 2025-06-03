@@ -1,9 +1,74 @@
 
+@article{patel2025rl,
+  title = {RL Perceptron: Generalization Dynamics of Policy Learning in High Dimensions},
+  author = {Patel, Nishil and Lee, Sebastian and Sarao Mannelli, Stefano and Goldt, Sebastian and Saxe, Andrew},
+  journal = {Phys. Rev. X},
+  volume = {15},
+  issue = {2},
+  pages = {021051},
+  numpages = {20},
+  year = {2025},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevX.15.021051},
+  url = {https://link.aps.org/doi/10.1103/PhysRevX.15.021051},
+  abstract = {Reinforcement learning (RL) algorithms have transformed many domains of machine learning. To tackle real-world problems, RL often relies on neural networks to learn policies directly from pixels or other high-dimensional sensory input. By contrast, many theories of RL have focused on discrete state spaces or worst-case analysis, and fundamental questions remain about the dynamics of policy learning in high-dimensional settings. Here, we propose a solvable high-dimensional RL model that can capture a variety of learning protocols, and we derive its typical policy learning dynamics as a set of closed-form ordinary differential equations. We obtain optimal schedules for the learning rates and task difficulty—analogous to annealing schemes and curricula during training in RL—and show that the model exhibits rich behavior, including delayed learning under sparse rewards, a variety of learning regimes depending on reward baselines, and a speed-accuracy trade-off driven by reward stringency. Experiments on variants of the Procgen game “Bossfight” and Arcade Learning Environment game “Pong” also show such a speed-accuracy trade-off in practice. Together, these results take a step toward closing the gap between theory and practice in high-dimensional RL.}
+}
+
 @article{zhang2025relu,
   title={When Are Bias-Free ReLU Networks Effectively Linear Networks?},
   author={Zhang, Yedi and Saxe, Andrew M and Latham, Peter E},
   journal={Transactions on Machine Learning Research},
-  url = {https://openreview.net/forum?id=Ucpfdn66k2}
+  url = {https://openreview.net/forum?id=Ucpfdn66k2},
+  abstract = {We investigate the implications of removing bias in ReLU networks regarding their expressivity and learning dynamics. We first show that two-layer bias-free ReLU networks have limited expressivity: the only odd function two-layer bias-free ReLU networks can express is a linear one. We then show that, under symmetry conditions on the data, these networks have the same learning dynamics as linear networks. This enables us to give analytical time-course solutions to certain two-layer bias-free (leaky) ReLU networks outside the lazy learning regime. While deep bias-free ReLU networks are more expressive than their two-layer counterparts, they still share a number of similarities with deep linear networks. These similarities enable us to leverage insights from linear networks to understand certain ReLU networks. Overall, our results show that some properties previously established for bias-free ReLU networks arise due to equivalence to linear networks.}
+}
+
+@article{lowe2025regularised,
+    doi = {10.1371/journal.pcbi.1012505},
+    author = {Löwe, Anika T. AND Touzo, Léo AND Muhle-Karbe, Paul S. AND Saxe, Andrew M. AND Summerfield, Christopher AND Schuck, Nicolas W.},
+    journal = {PLOS Computational Biology},
+    publisher = {Public Library of Science},
+    title = {Abrupt and spontaneous strategy switches emerge in simple regularised neural networks},
+    year = {2024},
+    month = {10},
+    volume = {20},
+    url = {https://doi.org/10.1371/journal.pcbi.1012505},
+    pages = {1-29},
+    abstract = {Humans sometimes have an insight that leads to a sudden and drastic performance improvement on the task they are working on. Sudden strategy adaptations are often linked to insights, considered to be a unique aspect of human cognition tied to complex processes such as creativity or meta-cognitive reasoning. Here, we take a learning perspective and ask whether insight-like behaviour can occur in simple artificial neural networks, even when the models only learn to form input-output associations through gradual gradient descent. We compared learning dynamics in humans and regularised neural networks in a perceptual decision task that included a hidden regularity to solve the task more efficiently. Our results show that only some humans discover this regularity, and that behaviour is marked by a sudden and abrupt strategy switch that reflects an aha-moment. Notably, we find that simple neural networks with a gradual learning rule and a constant learning rate closely mimicked behavioural characteristics of human insight-like switches, exhibiting delay of insight, suddenness and selective occurrence in only some networks. Analyses of network architectures and learning dynamics revealed that insight-like behaviour crucially depended on a regularised gating mechanism and noise added to gradient updates, which allowed the networks to accumulate “silent knowledge” that is initially suppressed by regularised gating. This suggests that insight-like behaviour can arise from gradual learning in simple neural networks, where it reflects the combined influences of noise, gating and regularisation. These results have potential implications for more complex systems, such as the brain, and guide the way for future insight research.},
+    number = {10}
+}
+
+@inproceedings{domine2025lazy,
+title={From lazy to rich: Exact learning dynamics in deep linear networks},
+author={Domin{\'e}, Cl{\'e}mentine CJ and Anguita, Nicolas and Proca, Alexandra M and Braun, Lukas and Kunin, Daniel and Mediano, Pedro AM and Saxe, Andrew M},
+booktitle={International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=ZXaocmXc6d},
+abstract={Biological and artificial neural networks develop internal representations that enable them to perform complex tasks. In artificial networks, the effectiveness of these models relies on their ability to build task specific representation, a process influenced by interactions among datasets, architectures, initialization strategies, and optimization algorithms. Prior studies highlight that different initializations can place networks in either a lazy regime, where representations remain static, or a rich/feature learning regime, where representations evolve dynamically. Here, we examine how initialization influences learning dynamics in deep linear neural networks, deriving exact solutions for lambda-balanced initializations-defined by the relative scale of weights across layers. These solutions capture the evolution of representations and the Neural Tangent Kernel across the spectrum from the rich to the lazy regimes. Our findings deepen the theoretical understanding of the impact of weight initialization on learning regimes, with implications for continual learning, reversal learning, and transfer learning, relevant to both neuroscience and practical applications.}
+}
+
+@inproceedings{lufkin2024localization,
+ author = {Lufkin, Leon and Saxe, Andrew and Grant, Erin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {25938--25960},
+ publisher = {Curran Associates, Inc.},
+ title = {Nonlinear dynamics of localization in neural receptive fields},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/2dab2f94544f9297d01a46a5453b93cd-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024},
+ abstract={Localized receptive fields—neurons that are selective for certain contiguous spatiotemporal features of their input—populate early sensory regions of the mammalian brain. Unsupervised learning algorithms that optimize explicit sparsity or independence criteria replicate features of these localized receptive fields, but fail to explain directly how localization arises through learning without efficient coding, as occurs in early layers of deep neural networks and might occur in early sensory regions of biological systems. We consider an alternative model in which localized receptive fields emerge without explicit top-down efficiency constraints—a feed-forward neural network trained on a data model inspired by the structure of natural images. Previous work identified the importance of non-Gaussian statistics to localization in this setting but left open questions about the mechanisms driving dynamical emergence. We address these questions by deriving the effective learning dynamics for a single nonlinear neuron, making precise how higher-order statistical properties of the input data drive emergent localization, and we demonstrate that the predictions of these effective dynamics extend to the many-neuron setting. Our analysis provides an alternative explanation for the ubiquity of localization as resulting from the nonlinear dynamics of learning in neural circuits.}
+}
+
+@misc{rubruck2024early,
+      title={Early learning of the optimal constant solution in neural networks and humans}, 
+      author={Jirko Rubruck and Jan P. Bauer and Andrew Saxe and Christopher Summerfield},
+      year={2024},
+      eprint={2406.17467},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2406.17467}, 
+      abstract={Deep neural networks learn increasingly complex functions over the course of training. Here, we show both empirically and theoretically that learning of the target function is preceded by an early phase in which networks learn the optimal constant solution (OCS) - that is, initial model responses mirror the distribution of target labels, while entirely ignoring information provided in the input. Using a hierarchical category learning task, we derive exact solutions for learning dynamics in deep linear networks trained with bias terms. Even when initialized to zero, this simple architectural feature induces substantial changes in early dynamics. We identify hallmarks of this early OCS phase and illustrate how these signatures are observed in deep linear networks and larger, more complex (and nonlinear) convolutional neural networks solving a hierarchical learning task based on MNIST and CIFAR10. We explain these observations by proving that deep linear networks necessarily learn the OCS during early learning. To further probe the generality of our results, we train human learners over the course of three days on the category learning task. We then identify qualitative signatures of this early OCS phase in terms of the dynamics of true negative (correct-rejection) rates. Surprisingly, we find the same early reliance on the OCS in the behaviour of human learners. Finally, we show that learning of the OCS can emerge even in the absence of bias terms and is equivalently driven by generic correlations in the input data. Overall, our work suggests the OCS as a universal learning principle in supervised, error-corrective learning, and the mechanistic reasons for its prevalence.}
 }
 
 @InProceedings{mannelli2024tiltinga,
