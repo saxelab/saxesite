@@ -12,7 +12,7 @@ title: People
 
 {% endfor %}
 
-{% assign people = curr_people | where:"position_type","postdoc" %}
+{% assign people = curr_people | where:"position_type","postdoc" | sort: 'join_date' %}
 {% for person in people %}
 
   {% include person.html %}
@@ -36,7 +36,7 @@ title: People
 <div class="lead"> Alumni </div>
 			  
 
-{% assign people = site.people | where:"alum","true" | sort: 'join_date' %}
+{% assign people = site.people | where:"alum","true" %}
 
 {% for person in people %}
 
