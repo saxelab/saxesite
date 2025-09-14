@@ -1,7 +1,7 @@
 ---
 short_name: Nish
 name: Nishil Patel
-position: Phd Student
+position: PhD Student
 position_type: dphil
 alum: false
 image: npatel_photo.jpg
