@@ -6,16 +6,52 @@ title: Talks
 {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
 {% for talk in sorted_talks %}
 <div class="row my-5">
-     <div class="col-md-3">
-     	<div class="embed-responsive embed-responsive-16by9">
-	  		<iframe class="embed-responsive-item" src="{{talk.embedurl}}" allowfullscreen></iframe>
-		</div>
-     </div>
-     <div class="col">
-		<div class="lead">{{ talk.name }}</div>
-  		<div class="text-muted">{{ talk.venue }} {{talk.date | date: "%Y" }}</div>
-  		<p>{{ talk.content | markdownify }}</p>
-     </div>
-     
+  <div class="col-md-3">
+    {% if talk.embedurl %}
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"
+                src="{{ talk.embedurl }}"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    {% elsif talk.link and talk.image %}
+      <a href="{{ talk.link }}" target="_blank" rel="noopener" aria-label="Open {{ talk.name }}">
+        <img src="{{ talk.image | relative_url }}"
+             class="img-fluid rounded"
+             alt="{{ talk.name }} thumbnail"
+             loading="lazy">
+      </a>
+    {% elsif talk.link %}
+      <a href="{{ talk.link }}" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+        View Talk
+      </a>
+    {% elsif talk.image %}
+      <img src="{{ talk.image | relative_url }}"
+           class="img-fluid rounded"
+           alt="{{ talk.name }} thumbnail"
+           loading="lazy">
+    {% else %}
+      <div class="text-muted small">No media available</div>
+    {% endif %}
+  </div>
+
+  <div class="col">
+    <div class="lead">
+      {% if talk.embedurl %}
+        {{ talk.name }}
+      {% elsif talk.link %}
+        <a href="{{ talk.link }}" target="_blank" rel="noopener">{{ talk.name }}</a>
+      {% else %}
+        {{ talk.name }}
+      {% endif %}
+    </div>
+
+    <div class="text-muted">
+      {{ talk.venue }} {% if talk.date %}{{ talk.date | date: "%Y" }}{% endif %}
+    </div>
+
+    <p>{{ talk.content | markdownify }}</p>
+  </div>
 </div>
 {% endfor %}
