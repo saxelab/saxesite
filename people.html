@@ -36,7 +36,7 @@ title: People
 <div class="lead"> Alumni </div>
 			  
 
-{% assign people = site.people | where:"alum","true" %}
+{% assign people = site.people | where:"alum","true" | sort: 'join_date' | reverse %}
 
 {% for person in people %}
 
