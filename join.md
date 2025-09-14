@@ -13,7 +13,7 @@ We are committed to making our lab open, inclusive and equal and welcome candida
 Graduate students
 {: .lead}
 
-Graduate students can join the lab through the [Gatsby Unit PhD Programme](https://www.ucl.ac.uk/gatsby/study-and-work/phd-programme) and [SWC PhD Programme](https://www.sainsburywellcome.org/web/content/neuroscience-phd-programme) and should apply directly to these. It is totally fine to apply to both.
+Graduate students can join the lab through the [Gatsby Unit PhD Programme](https://www.ucl.ac.uk/gatsby/study-and-work/phd-programme), [Joint Gatsby-SWC PhD Programme](https://www.ucl.ac.uk/life-sciences/gatsby/study-and-work/gcnu-swc-joint-phd-programme), or [SWC PhD Programme](https://www.sainsburywellcome.org/web/content/neuroscience-phd-programme) and should apply directly to these. 
 
 Pre-doctoral research experience
 {: .lead}
