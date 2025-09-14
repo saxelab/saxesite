@@ -4,6 +4,7 @@ name: Sebastian Lee
 position: DPhil Student
 position_type: dphil
 alum: true
+now: Harvard
 image: seblee.jpg
 website: https://seblee97.github.io/
 join_date: 2019-11-1

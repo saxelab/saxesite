@@ -4,6 +4,7 @@ name: Stefano Sarao Mannelli
 position: Postdoctoral Researcher
 position_type: postdoc
 alum: true
+now: Assistant Professor, Chalmers University
 image: stef.jpg
 orcid: 0000-0002-7008-8832
 googlescholar: https://scholar.google.it/citations?user=Kq272_MAAAAJ&hl=en&oi=ao

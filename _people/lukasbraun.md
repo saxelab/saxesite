@@ -4,6 +4,7 @@ name: Lukas Braun
 position: DPhil Student
 position_type: dphil
 alum: true
+now: Allen Institute
 image: lukasbraun.jpg
 website: https://lukasbraun.com/
 join_date: 2020-10-1

@@ -4,6 +4,7 @@ name: Aaditya K Singh
 position: PhD Student
 position_type: dphil
 alum: true
+now: OpenAI
 image: aadityasingh.jpeg
 googlescholar: https://scholar.google.com/citations?user=9OPKqmMAAAAJ&hl=en
 website: https://github.com/aadityasingh

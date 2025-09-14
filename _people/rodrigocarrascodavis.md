@@ -3,7 +3,8 @@ short_name: Rodrigo
 name: Rodrigo Carrasco Davis
 position: DPhil Student
 position_type: dphil
-alum: false
+alum: true
+now: Princeton
 image: rodrigocd.jpeg
 orcid: 0000-0003-4673-8791
 googlescholar: https://scholar.google.com/citations?user=PLBqVGoAAAAJ&hl=en
