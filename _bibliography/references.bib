@@ -1,10 +1,76 @@
 
-@inproceedings{zhang2025icl,
-title={Training Dynamics of In-Context Learning in Linear Attention},
-author={Zhang, Yedi and Singh, Aaditya K and Latham, Peter E and Saxe, Andrew},
-booktitle={International Conference on Machine Learning},
-year={2025},
-url={https://openreview.net/forum?id=aFNq67ilos}
+@article{liebana2025dopamine,
+  title={Dopamine encodes deep network teaching signals for individual learning trajectories},
+  author={Liebana, Samuel and Laffere, Aeron and Toschi, Chiara and Schilling, Louisa and Moretti, Jessica and Podlaski, Jacek and Fritsche, Matthias and Zatka-Haas, Peter and Li, Yulong and Bogacz, Rafal and others},
+  journal={Cell},
+  year={2025},
+  publisher={Elsevier},
+  url = {https://www.cell.com/cell/fulltext/S0092-8674(25)00575-6},
+  abstract={Striatal dopamine plays fundamental roles in fine-tuning learned decisions. However, when learning from naive to expert, individuals often exhibit diverse learning trajectories, defying understanding of its underlying dopaminergic mechanisms. Here, we longitudinally measure and manipulate dorsal striatal dopamine signals in mice learning a decision task from naive to expert. Mice learning trajectories transitioned through sequences of strategies, showing substantial individual diversity. Remarkably, the transitions were systematic; each mouse?s early strategy determined its strategy weeks later. Dopamine signals reflected strategies each animal transitioned through, encoding a subset of stimulus-choice associations. Optogenetic manipulations selectively updated these associations, leading to learning effects distinct from that of reward. A deep neural network using heterogeneous teaching signals, each updating a subset of network association weights, captured our results. Analyzing the model?s fixed points explained learning diversity and systematicity. Altogether, this work provides insights into the biological and mathematical principles underlying individual long-term learning trajectories.}
+}
+
+@InProceedings{vanrossem25algorithm,
+  title = 	 {Algorithm Development in Neural Networks: Insights from the Streaming Parity Task},
+  author =       {Van Rossem, Loek and Saxe, Andrew M},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {60764--60791},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/van-rossem25a/van-rossem25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/van-rossem25a.html},
+  abstract = 	 {Even when massively overparameterized, deep neural networks show a remarkable ability to generalize. Research on this phenomenon has focused on generalization within distribution, via smooth interpolation. Yet in some settings neural networks also learn to extrapolate to data far beyond the bounds of the original training set, sometimes even allowing for infinite generalization, implying that an algorithm capable of solving the task has been learned. Here we undertake a case study of the learning dynamics of recurrent neural networks trained on the streaming parity task in order to develop an effective theory of algorithm development. The streaming parity task is a simple but nonlinear task defined on sequences up to arbitrary length. We show that, with sufficient finite training experience, RNNs exhibit a phase transition to perfect infinite generalization. Using an effective theory for the representational dynamics, we find an implicit representational merger effect which can be interpreted as the construction of a finite automaton that reproduces the task. Overall, our results disclose one mechanism by which neural networks can generalize infinitely from finite training experience.}
+}
+
+@InProceedings{singh25coopetition,
+  title = 	 {Strategy Coopetition Explains the Emergence and Transience of In-Context Learning},
+  author =       {Singh, Aaditya K and Moskovitz, Ted and Dragutinovi\'{c}, Sara and Hill, Felix and Chan, Stephanie C.Y. and Saxe, Andrew M},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {55720--55739},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/singh25c/singh25c.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/singh25c.html},
+  abstract = 	 {In-context learning (ICL) is a powerful ability that emerges in transformer models, enabling them to learn from context without weight updates. Recent work has established emergent ICL as a transient phenomenon that can sometimes disappear after long training times. In this work, we sought a mechanistic understanding of these transient dynamics. Firstly, we find that—after the disappearance of ICL—the asymptotic strategy is a remarkable hybrid between in-weights and in-context learning, which we term “context-constrained in-weights learning” (CIWL). CIWL is in competition with ICL, and eventually replaces it as the dominant strategy of the model (thus leading to ICL transience). However, we also find that the two competing strategies actually share sub-circuits, which gives rise to cooperative dynamics as well. For example, in our setup, ICL is unable to emerge quickly on its own, and can only be enabled through the simultaneous slow development of asymptotic CIWL. CIWL thus both cooperates and competes with ICL, a phenomenon we term “strategy coopetition”. We propose a minimal mathematical model that reproduces these key dynamics and interactions. Informed by this model, we were able to identify a setup where ICL is truly emergent and persistent.}
+}
+
+@InProceedings{zhang2025icl,
+  title = 	 {Training Dynamics of In-Context Learning in Linear Attention},
+  author =       {Zhang, Yedi and Singh, Aaditya K and Latham, Peter E. and Saxe, Andrew M},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {76047--76087},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25br/zhang25br.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/zhang25br.html},
+  abstract = 	 {While attention-based models have demonstrated the remarkable ability of in-context learning (ICL), the theoretical understanding of how these models acquired this ability through gradient descent training is still preliminary. Towards answering this question, we study the gradient descent dynamics of multi-head linear self-attention trained for in-context linear regression. We examine two parametrizations of linear self-attention: one with the key and query weights merged as a single matrix (common in theoretical studies), and one with separate key and query matrices (closer to practical settings). For the merged parametrization, we show that the training dynamics has two fixed points and the loss trajectory exhibits a single, abrupt drop. We derive an analytical time-course solution for a certain class of datasets and initialization. For the separate parametrization, we show that the training dynamics has exponentially many fixed points and the loss exhibits saddle-to-saddle dynamics, which we reduce to scalar ordinary differential equations. During training, the model implements principal component regression in context with the number of principal components increasing over training time. Overall, we provide a theoretical description of how ICL abilities evolve during gradient descent training of linear attention, revealing abrupt acquisition or progressive improvements depending on how the key and query are parametrized.}
+}
+
+@InProceedings{braun25rsa,
+  title = 	 {Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks},
+  author =       {Braun, Lukas and Grant, Erin and Saxe, Andrew M},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {5355--5382},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/braun25a/braun25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/braun25a.html},
+  abstract = 	 {A foundational principle of connectionism is that perception, action, and cognition emerge from parallel computations among simple, interconnected units that generate and rely on neural representations. Accordingly, researchers employ multivariate pattern analysis to decode and compare the neural codes of artificial and biological networks, aiming to uncover their functions. However, there is limited analytical understanding of how a network’s representation and function relate, despite this being essential to any quantitative notion of underlying function or functional similarity. We address this question using analysable two-layer linear networks and numerical simulations in nonlinear networks. We find that function and representation are dissociated, allowing representational similarity without functional similarity and vice versa. Further, we show that neither robustness to input noise nor the level of generalisation error constrain representations to the task. In contrast, networks robust to parameter noise have limited representational flexibility and must employ task-specific representations. Our findings suggest that representational alignment reflects computational advantages beyond functional alignment alone, with significant implications for interpreting and comparing the representations of connectionist systems}
 }
 
 @article{patel2025rl,
