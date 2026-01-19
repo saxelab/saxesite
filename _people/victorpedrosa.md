@@ -3,7 +3,8 @@ short_name: Victor
 name: Victor Pedrosa
 position: Postdoctoral Researcher
 position_type: postdoc
-alum: false
+alum: true
+now: Associate Lecturer (Teacher) in Physics, UCL
 image: victorpedrosa.png
 googlescholar: https://scholar.google.com/citations?user=q1rVfOYAAAAJ&hl=en
 join_date: 2023-01-18

@@ -3,7 +3,8 @@ short_name: Clementine
 name: Clementine Domine
 position: DPhil Student
 position_type: dphil
-alum: false
+alum: true
+now: ISTA and Harvard
 image: domine_portrait.jpg
 website: https://clementinedomine.github.io
 join_date: 2021-5-1
