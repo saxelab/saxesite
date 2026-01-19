@@ -1,8 +1,10 @@
 <div class="row my-5">
   <div class="col-md-3">
+     {#
     {% if person.image %}
      	<img class="img-fluid rounded" src="assets/images/{{ person.image}}" alt="Portrait">
     {% endif %}
+    #}
   </div>
   <div class="col">
   	<div class="lead">{{ person.name }}</div>
