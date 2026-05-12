@@ -3,7 +3,8 @@ short_name: Basile
 name: Basile Confavreux
 position: Postdoctoral Researcher
 position_type: postdoc
-alum: false
+alum: true
+now: CEO, Concord AI
 image: basile.jpeg
 googlescholar: https://scholar.google.com/citations?user=OSg3D9MAAAAJ](https://scholar.google.com/citations?user=103waU8AAAAJ&hl=en
 join_date: 2024-03-01
