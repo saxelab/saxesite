@@ -3,7 +3,8 @@ collections:
   talks:
   seminars:
 
-plugins: ['jekyll/scholar']
+plugins:
+  - jekyll/scholar
 
 scholar:
   style:  apa
@@ -16,7 +17,3 @@ scholar:
 sass:
   sass_dir: _sass
   style: compressed
-
-gems:
-  - jekyll-autoprefixer
-  - jekyll-scholar

@@ -1,7 +1,9 @@
-$theme-colors: (
-  "primary": #428bca
-);
-
-$font-weight-normal: 300;
-
-$enable-responsive-font-sizes: true;
+:root {
+  --bs-primary: #428bca;
+  --bs-primary-rgb: 66, 139, 202;
+  --bs-link-color: #428bca;
+  --bs-link-color-rgb: 66, 139, 202;
+  --bs-link-hover-color: #2a6496;
+  --bs-link-hover-color-rgb: 42, 100, 150;
+  --bs-body-font-weight: 300;
+}
