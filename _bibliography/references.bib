@@ -5,33 +5,35 @@
   eprint={2605.20105},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2605.20105}
+  url={https://arxiv.org/abs/2605.20105},
+  abstract={Learning to generalise from limited data is a fundamental challenge for both artificial and biological systems. A common strategy is to extract reusable structure from abundant unlabelled data, enabling efficient adaptation to new tasks from limited labelled data. This two-stage paradigm is now standard in modern training pipelines, where pretraining is followed by fine-tuning or linear probing. We provide an analytical model of this process: structure extraction is formalized as principal component analysis on unlabelled data, and downstream learning as linear regression on a separate labelled dataset. In the high-dimensional regime, we derive exact expressions for training and generalisation error showcasing their dependence on representation dimensionality, unlabelled and labelled sample sizes, and task alignment. Our results show that pretrained representations strongly influence downstream generalisation, and we characterize the optimal representation size as a function of task parameters: with abundant pretraining data but scarce downstream data, maximally compressed representations are optimal, whereas with limited pretraining data, higher-dimensional representations generalise better. Furthermore, we establish an exact trade-off between pretraining and supervision, quantifying how much unlabelled data is required to replace a single labelled sample. Beyond our idealised model, we observe similar phenomenology in autoencoders and pretrained LLMs. Altogether, we highlight that optimising representation size is critical, giving conditions for when compression during pretraining improves generalisation.}
 }
-
 @misc{strittmatter2026collaboration,
   title={When Collaboration Beats Ability: Mixed-Ability Teams Can Outperform High-Ability Teams Under Coordination Demands},
   author={Strittmatter, Younes and Skye, Rachael and Iglesias, Samuel and Liebana, Samuel and Saxe, Andrew and Ruiz-Garcia, Miguel and Teich, Erin and Spitzer, Markus},
   year={2026},
   publisher={OSF},
-  url={https://osf.io/preprints/psyarxiv/6yvb2}
+  doi={10.31234/osf.io/6yvb2_v1},
+  pdf={https://osf.io/download/6yvb2},
+  url={https://osf.io/preprints/psyarxiv/6yvb2},
+  abstract={Collective intelligence describes the capacity of groups to achieve levels of performance that cannot be explained by the abilities of their individuals. The existence of collective intelligence implies that groups composed of mixed-ability members may outperform groups of high ability. Here, we examine when such benefits emerge in humans and whether it is driven by collaboration. We designed a collaborative multiplayer online game and manipulated team composition (mixed-ability vs. high-ability) and coordination demands by exposing teams to two different task environments that varied in how much they encouraged collaboration. We collected data from 280 teams of two human players (70 per condition), totaling 560 participants. We found that mixed-ability teams outperformed high-ability teams in environments designed to encourage collaboration. This performance advantage was due to more collaborative actions and more frequent division of labor. These results show that collaboration emerges selectively as a function of group composition and coordination demands.}
 }
-
 @inproceedings{confavreux2026comparing,
 title={Comparing the learning dynamics of in-context learning and fine-tuning in language models},
 author={Basile Confavreux and Aaditya K Singh and Jin Hwa Lee and Amaury Sabran and Andrew M Saxe},
 booktitle={The Fourteenth International Conference on Learning Representations},
 year={2026},
-url={https://openreview.net/forum?id=cJAtzOcAnd}
+url={https://openreview.net/forum?id=cJAtzOcAnd},
+  abstract={Pretrained language models can acquire novel tasks either through in-context learning (ICL)---adapting behavior via activations without weight updates---or through supervised fine-tuning (SFT), where parameters are explicitly updated. Prior work has reported differences in their generalization performance and inductive biases, but the origins of these differences remain poorly understood. In this work, we treat ICL and SFT as distinct learning algorithms and directly compare the learning dynamics they induce across medium-sized models, analyzing both the evolution of their inductive biases and the underlying internal representations. We find that ICL preserves rich input representations but imposes stronger priors inherited from pretraining, whereas SFT suppresses task-irrelevant features---potentially explaining its weaker generalization in few-shot regimes. These results highlight a mechanistic distinction between context-driven and weight-driven learning.}
 }
-
 @inproceedings{zhang2026saddletosaddle,
 title={Saddle-to-Saddle Dynamics Explains A Simplicity Bias Across Neural Network Architectures},
 author={Yedi Zhang and Andrew M Saxe and Peter E. Latham},
 booktitle={The Fourteenth International Conference on Learning Representations},
 year={2026},
-url={https://openreview.net/forum?id=Vit5M0G5Gb}
+url={https://openreview.net/forum?id=Vit5M0G5Gb},
+  abstract={Neural networks trained with gradient descent often learn solutions of increasing complexity over time, a phenomenon known as simplicity bias. Despite being widely observed across architectures, existing theoretical treatments lack a unifying framework. We present a theoretical framework that explains a simplicity bias arising from saddle-to-saddle learning dynamics for a general class of neural networks, incorporating fully-connected, convolutional, and attention-based architectures. Here, simple means expressible with few hidden units, i.e., hidden neurons, convolutional kernels, or attention heads. Specifically, we show that linear networks learn solutions of increasing rank, ReLU networks learn solutions with an increasing number of kinks, convolutional networks learn solutions with an increasing number of convolutional kernels, and self-attention models learn solutions with an increasing number of attention heads. By analyzing fixed points, invariant manifolds, and dynamics of gradient descent learning, we show that saddle-to-saddle dynamics operates by iteratively evolving near an invariant manifold, approaching a saddle, and switching to another invariant manifold. Our analysis also disentangles data-induced and initialization-induced saddle-to-saddle dynamics. In particular, the former leads to low-rank weights while the latter to sparse weights. Equipped with the theory, we predict the effects of data distribution and weight initialization on the duration and number of plateaus in learning. Overall, our theory offers a framework for understanding when and why gradient descent progressively learns increasingly complex solutions.}
 }
-
 @article{jarvis2026compositionality,
   title={Compositionality and systematicity emerge from iterated learning in deep linear networks},
   author={Jarvis, Devon and Klein, Richard and Rosman, Benjamin and Saxe, Andrew M.},
@@ -43,9 +45,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   month={May},
   publisher={Proceedings of the National Academy of Sciences},
   doi={10.1073/pnas.2509739123},
-  url={https://doi.org/10.1073/pnas.2509739123}
+  url={https://doi.org/10.1073/pnas.2509739123},
+  abstract={Humans have a remarkable ability to systematically generalize-reasoning about new situations by combining aspects of previous experiences. Language provides one of the primary examples of this ability and modern machine learning has drawn much inspiration from linguistics. A recent example is iterated learning, a procedure where generations of networks learn from the output of earlier learners. The result is a refinement of the network's "language" or output labels for given inputs toward compositional structure. Here we theoretically study the emergence of compositional language, and the ability of simple neural networks to leverage this compositionality to systematically generalize. We build on prior theoretical work on linear networks, which mathematically define systematic generalization, by a) applying the analysis of shallow and deep linear network to the iterated learning procedure by deriving exact dynamics of learning over generations; b) refining the definition of systematicity to understand the benefits and limitations of iterated learning. We find that iterated learning does facilitate systematic generalization over standard training paradigms by uncovering compositional substructure in the output labels. Our results confirm a long standing conjecture: that multiple generations of iterated learning are required for compositional structure to emerge, which can outperform a single generation network trained with optimal early-stopping. However, for the network to treat the input systematically and ignore features which do not generalize, the network must be trained on an extremely large dataset. Hence, we define "weak systematic generalization" to explain this emergent systematicity from scale.}
 }
-
 @InProceedings{benjamin2026introduction,
   title = {An Introduction to Connectionist Theories of Semantic Cognition},
   author = {Benjamin, Ari S and Beyer, Anna-Lea and Kloots, Marianne De Heer and Hwang, Jaedong and Karoui, Hajer and Ostrow, Mitchell and Rubruck, Jirko and Sandbrink, Kai Jappe and Grant, Satchel and Saxe, Andrew M and McClelland, James Lloyd},
@@ -58,9 +60,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   month = {01 Jan--31 Dec},
   publisher = {PMLR},
   pdf = {https://raw.githubusercontent.com/mlresearch/v320/main/assets/benjamin26a/benjamin26a.pdf},
-  url = {https://proceedings.mlr.press/v320/benjamin26a.html}
+  url = {https://proceedings.mlr.press/v320/benjamin26a.html},
+  abstract={Jay McClelland’s lectures spotlighted foundational insights and contemporary advances in neural modelling of cognition. Beginning with the premise that mental concepts correspond to patterns of activity in networked neurons, the connectionist paradigm provides mathematical models that predict and explain a plethora of cognitive phenomena. For instance, in semantic development, connectionist models that learn through gradual error-driven updates capture the progressive differentiation of concepts from broad to fine categories. This observation, and others, were captured in the early Rumelhart model and persist in today’s language models. However, there are shortcomings of simple error-based learning in neural networks, most notably the problem of catastrophic interference, wherein learning new information disrupts previously acquired knowledge. Biological solutions to this problem may reveal additional structures in our brains. For example, in the complementary learning systems framework, the hippocampus rapidly stores episodic experiences while the neocortex integrates them over time, thus mitigating interference and enabling flexible knowledge consolidation. Furthermore, existing schemas facilitate faster acquisition of related concepts, reflecting how prior knowledge shapes learning efficiency. Returning to the phenomena observed in semantic development, theoretical work by Saxe, McClelland and Ganguli provides exact analytical solutions, showing how, for instance, stage-like learning trajectories and transient "illusory correlations" arise from the interaction between the statistical regularities of the environment and nonlinear learning dynamics in a deep neural network. Taken together, these lectures underscored the enduring value of connectionism in bridging psychology, neuroscience, and machine learning.}
 }
-
 @misc{anguita2026pretraining,
   title={A Theory of How Pretraining Shapes Inductive Bias in Fine-Tuning},
   author={Anguita, Nicolas and Locatello, Francesco and Saxe, Andrew M. and Mondelli, Marco and Mancini, Flavia and Lippl, Samuel and Domine, Clementine},
@@ -68,9 +70,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   eprint={2602.20062},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2602.20062}
+  url={https://arxiv.org/abs/2602.20062},
+  abstract={Pretraining and fine-tuning are central stages in modern machine learning systems. In practice, feature learning plays an important role across both stages: deep neural networks learn a broad range of useful features during pretraining and further refine those features during fine-tuning. However, an end-to-end theoretical understanding of how choices of initialization impact the ability to reuse and refine features during fine-tuning has remained elusive. Here we develop an analytical theory of the pretraining-fine-tuning pipeline in diagonal linear networks, deriving exact expressions for the generalization error as a function of initialization parameters and task statistics. We find that different initialization choices place the network into four distinct fine-tuning regimes that are distinguished by their ability to support feature learning and reuse, and therefore by the task statistics for which they are beneficial. In particular, a smaller initialization scale in earlier layers enables the network to both reuse and refine its features, leading to superior generalization on fine-tuning tasks that rely on a subset of pretraining features. We demonstrate empirically that the same initialization parameters impact generalization in nonlinear networks trained on CIFAR-100. Overall, our results demonstrate analytically how data and network initialization interact to shape fine-tuning generalization, highlighting an important role for the relative scale of initialization across different layers in enabling continued feature learning during fine-tuning.}
 }
-
 @misc{njaradi2026optimal,
   title={Optimal Learning Rate Schedule for Balancing Effort and Performance},
   author={Njaradi, Valentina and Carrasco-Davis, Rodrigo and Latham, Peter E. and Saxe, Andrew},
@@ -78,9 +80,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   eprint={2601.07830},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2601.07830}
+  url={https://arxiv.org/abs/2601.07830},
+  abstract={Learning how to learn efficiently is a fundamental challenge for biological agents and a growing concern for artificial ones. To learn effectively, an agent must regulate its learning speed, balancing the benefits of rapid improvement against the costs of effort, instability, or resource use. We introduce a normative framework that formalizes this problem as an optimal control process in which the agent maximizes cumulative performance while incurring a cost of learning. From this objective, we derive a closed-form solution for the optimal learning rate, which has the form of a closed-loop controller that depends only on the agent's current and expected future performance. Under mild assumptions, this solution generalizes across tasks and architectures and reproduces numerically optimized schedules in simulations. In simple learning models, we can mathematically analyze how agent and task parameters shape learning-rate scheduling as an open-loop control solution. Because the optimal policy depends on expectations of future performance, the framework predicts how overconfidence or underconfidence influence engagement and persistence, linking the control of learning speed to theories of self-regulated learning. We further show how a simple episodic memory mechanism can approximate the required performance expectations by recalling similar past learning experiences, providing a biologically plausible route to near-optimal behaviour. Together, these results provide a normative and biologically plausible account of learning speed control, linking self-regulated learning, effort allocation, and episodic memory estimation within a unified and tractable mathematical framework.}
 }
-
 @article{jarvis2025initialisation,
   title={A theory of initialisation's impact on specialisation},
   author={Jarvis, Devon and Lee, Sebastian and Domin{\'e}, Cl{\'e}mentine C. J. and Saxe, Andrew M. and Sarao Mannelli, Stefano},
@@ -92,9 +94,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   month={Nov},
   publisher={IOP Publishing},
   doi={10.1088/1742-5468/ae1214},
-  url={https://doi.org/10.1088/1742-5468/ae1214}
+  url={https://doi.org/10.1088/1742-5468/ae1214},
+  abstract={Prior work has demonstrated a consistent tendency in neural networks engaged in continual learning tasks, wherein intermediate task similarity results in the highest levels of catastrophic interference. This phenomenon is attributed to the network’s tendency to reuse learned features across tasks. However, this explanation heavily relies on the premise that neuron specialisation occurs, i.e. the emergence of localised representations. Our investigation challenges the validity of this assumption. Using theoretical frameworks for the analysis of neural networks, we show a strong dependence of specialisation on the initial condition. More precisely, we show that weight imbalance and high weight entropy can favour specialised solutions. We then apply these insights in the context of continual learning, first showing the emergence of a monotonic relation between task-similarity and forgetting in non-specialised networks. Finally, we show that specialisation by weight imbalance is beneficial on the commonly employed elastic weight consolidation regularisation technique.}
 }
-
 @misc{dragutinovic2025softmax,
   title={Softmax {$\geq$} Linear: Transformers may learn to classify in-context by kernel gradient descent},
   author={Dragutinovi{\'c}, Sara and Saxe, Andrew M. and Singh, Aaditya K.},
@@ -102,17 +104,18 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   eprint={2510.10425},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2510.10425}
+  url={https://arxiv.org/abs/2510.10425},
+  abstract={The remarkable ability of transformers to learn new concepts solely by reading examples within the input prompt, termed in-context learning (ICL), is a crucial aspect of intelligent behavior. Here, we focus on understanding the learning algorithm transformers use to learn from context. Existing theoretical work, often based on simplifying assumptions, has primarily focused on linear self-attention and continuous regression tasks, finding transformers can learn in-context by gradient descent. Given that transformers are typically trained on discrete and complex tasks, we bridge the gap from this existing work to the setting of classification, with non-linear (importantly, softmax) activation. We find that transformers still learn to do gradient descent in-context, though on functionals in the kernel feature space and with a context-adaptive learning rate in the case of softmax transformer. These theoretical findings suggest a greater adaptability to context for softmax attention, which we empirically verify and study through ablations. Overall, we hope this enhances theoretical understanding of in-context learning algorithms in more realistic settings, pushes forward our intuitions and enables further theory bridging to larger models.}
 }
-
 @inproceedings{grossman2025dynamics,
   title={Dynamics and structure of generalization during reinforcement learning in human brains and artificial networks},
   author={Grossman, Shany and Hedrich, Noa and Saxe, Andrew and Schuck, Nicolas W.},
   booktitle={CCN 2025: 8th annual conference on Cognitive Computational Neuroscience},
   year={2025},
-  url={https://hdl.handle.net/21.11116/0000-0011-8C28-3}
+  pdf={https://pure.mpg.de/rest/items/item_3661446_1/component/file_3661447/content},
+  url={https://hdl.handle.net/21.11116/0000-0011-8C28-3},
+  abstract={Goal-directed decision making amidst an overwhelming stream of sensory input requires learning internal representations that capture a task’s underlying structure. Importantly, such internal abstractions enable generalization. Representing an object’s shape but ignoring its color, for instance, means that anything learned about a green triangle will generalize to red triangles. Here, we investigate this dynamic interaction of task representation learning and generalization. Human participants and artificial neural networks were trained with the same contextual reinforcement learning task. Analyses of human data reveal that participants learned an abstract task structure, which becomes detectable in the orbitofrontal cortex (OFC) after learning. Recurrent neural networks trained on the same learning curriculum exhibit similar abstractions of task representations over time. Notably, we find that the similarity structure of the networks’ internal task representations affects how weight updates after a single example alter network behavior and representations on other trials. The network’s progressing context differentiation in its internal layers hence leads to generalization of single experiences to other events within the same context. Ongoing work aims to gain a mechanistic understanding of model observations and contrast them with learning dynamics in the human brain.}
 }
-
 @misc{lee2025distinct,
   title={Distinct Computations Emerge From Compositional Curricula in In-Context Learning},
   author={Lee, Jin Hwa and Lampinen, Andrew K. and Singh, Aaditya K. and Saxe, Andrew M.},
@@ -120,9 +123,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   eprint={2506.13253},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2506.13253}
+  url={https://arxiv.org/abs/2506.13253},
+  abstract={In-context learning (ICL) research often considers learning a function in-context through a uniform sample of input-output pairs. Here, we investigate how presenting a compositional subtask curriculum in context may alter the computations a transformer learns. We design a compositional algorithmic task based on the modular exponential-a double exponential task composed of two single exponential subtasks and train transformer models to learn the task in-context. We compare (a) models trained using an in-context curriculum consisting of single exponential subtasks and, (b) models trained directly on the double exponential task without such a curriculum. We show that models trained with a subtask curriculum can perform zero-shot inference on unseen compositional tasks and are more robust given the same context length. We study how the task and subtasks are represented across the two training regimes. We find that the models employ diverse strategies modulated by the specific curriculum design.}
 }
-
 @article{confavreux2025thousand,
   title={Memory by a thousand rules: Automated discovery of multi-type plasticity rules reveals variety \& degeneracy at the heart of learning},
   author={Confavreux, Basile and Harrington, Zoe P. M. and Kania, Maciej and Ramesh, Poornima and Krouglova, Anastasia N. and Bozelos, Panos A. and Macke, Jakob H. and Saxe, Andrew M. and Gon{\c{c}}alves, Pedro J. and Vogels, Tim P.},
@@ -131,9 +134,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   month={May},
   publisher={bioRxiv},
   doi={10.1101/2025.05.28.656584},
-  url={https://doi.org/10.1101/2025.05.28.656584}
+  url={https://doi.org/10.1101/2025.05.28.656584},
+  abstract={Synaptic plasticity is the basis of learning and memory, but the link between synaptic changes and neural function remains elusive. Here, we used automated search algorithms to obtain thousands of strikingly diverse quadruplets of excitatory(E)-to-E, E-to-inhibitory(I), IE, and II plasticity rules, cooperating to stabilize recurrent spiking networks. Despite the fact that quadruplets were selected for homeostasis, more than 90% of them performed well in simple and more difficult memory tasks such as novelty detection, contextual novelty and sequence replay. Co-activity was crucial, i.e., most rules failed in isolation. Our purely local, unsupervised plasticity rules could also help solve computer games such as pong. Our work showcases automated discovery augmenting human intuition to find en masse solutions for high dimensional problems.}
 }
-
 @inproceedings{jarvis2025make,
   title={Make Haste Slowly: A Theory of Emergent Structured Mixed Selectivity in Feature Learning ReLU Networks},
   author={Jarvis, Devon and Klein, Richard and Rosman, Benjamin and Saxe, Andrew M.},
@@ -142,9 +145,9 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   url={https://openreview.net/forum?id=27SSnLl85x},
   eprint={2503.06181},
   archivePrefix={arXiv},
-  primaryClass={cs.LG}
+  primaryClass={cs.LG},
+  abstract={In spite of finite dimension ReLU neural networks being a consistent factor behind recent deep learning successes, a theory of feature learning in these models remains elusive. Currently, insightful theories still rely on assumptions including the linearity of the network computations, unstructured input data and architectural constraints such as infinite width or a single hidden layer. To begin to address this gap we establish an equivalence between ReLU networks and Gated Deep Linear Networks, and use their greater tractability to derive dynamics of learning. We then consider multiple variants of a core task reminiscent of multi-task learning or contextual control which requires both feature learning and nonlinearity. We make explicit that, for these tasks, the ReLU networks possess an inductive bias towards latent representations which are not strictly modular or disentangled but are still highly structured and reusable between contexts. This effect is amplified with the addition of more contexts and hidden layers. Thus, we take a step towards a theory of feature learning in finite ReLU networks and shed light on how structured mixed-selective latent representations can emerge due to a bias for node-reuse and learning speed.}
 }
-
 @misc{jarvis2025revisiting,
   title={Revisiting the Role of Relearning in Semantic Dementia},
   author={Jarvis, Devon and Klar, Verena and Klein, Richard and Rosman, Benjamin and Saxe, Andrew},
@@ -152,17 +155,17 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
   eprint={2503.03545},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2503.03545}
+  url={https://arxiv.org/abs/2503.03545},
+  abstract={Patients with semantic dementia (SD) present with remarkably consistent atrophy of neurons in the anterior temporal lobe and behavioural impairments, such as graded loss of category knowledge. While relearning of lost knowledge has been shown in acute brain injuries such as stroke, it has not been widely supported in chronic cognitive diseases such as SD. Previous research has shown that deep linear artificial neural networks exhibit stages of semantic learning akin to humans. Here, we use a deep linear network to test the hypothesis that relearning during disease progression rather than particular atrophy cause the specific behavioural patterns associated with SD. After training the network to generate the common semantic features of various hierarchically organised objects, neurons are successively deleted to mimic atrophy while retraining the model. The model with relearning and deleted neurons reproduced errors specific to SD, including prototyping errors and cross-category confusions. This suggests that relearning is necessary for artificial neural networks to reproduce the behavioural patterns associated with SD in the absence of output non-linearities. Our results support a theory of SD progression that results from continuous relearning of lost information. Future research should revisit the role of relearning as a contributing factor to cognitive diseases.}
 }
-
 @inproceedings{boydmeredith2025stage,
   title={Stage-like Emergence of Task Strategies in Animals and in Neural Networks Trained by Gradient Descent},
   author={Boyd-Meredith, J. Tyler and Holobetz, Cristofer and Saxe, Andrew M.},
   booktitle={CCN 2025: 8th annual conference on Cognitive Computational Neuroscience},
   year={2025},
-  url={https://2025.ccneuro.org/abstract_pdf/Boyd-Meredith_2025_Stage-like_Emergence_Task_Strategies_Animals_Neural.pdf}
+  url={https://2025.ccneuro.org/abstract_pdf/Boyd-Meredith_2025_Stage-like_Emergence_Task_Strategies_Animals_Neural.pdf},
+  abstract={Humans and animals learning a task often appear to adopt a series of distinct strategies before reaching expert performance. This progression could result from deliberately testing distinct hypotheses about task contingencies. However, stage-like strategy changes can also be produced by artificial neural networks (ANN) learning by gradient descent (GD) without any explicit notion of task strategy. In this setting, apparent strategies correspond to saddle points in the loss dynamics around which learning slows before accelerating toward the next fixed point. We trained mice to perform a previously developed discrimination task, which they acquired in a series of stage-like behavioral transitions. We then developed an ANN model that recapitulated these transitions. By measuring the magnitude of the gradients during learning, we determined when the network approached (decreasing norm) and escaped saddle points (increasing norm) before reaching expert performance. Our modeling results show that even simple connectionist models without explicit hypotheses can be tailored to produce stages of learning that match what we observe in animals. We propose to develop and apply a method to identify saddle points of the loss and the likely transitions between them by performing gradient descent, not on the loss function, but on the magnitude of its gradient. For this abstract, we show how this tool identifies saddle points and their connections in a toy example.}
 }
-
 @inproceedings{NEURIPS2025_75ab7573,
  author = {Confavreux, Basile and Dorrell, William and Patel, Nishil and Saxe, Andrew},
  booktitle = {Advances in Neural Information Processing Systems},
@@ -172,15 +175,16 @@ url={https://openreview.net/forum?id=Vit5M0G5Gb}
  title = {Memory by accident: a theory of learning as a byproduct of network stabilization},
  url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/75ab7573bf85c4baa82c8cd2016567b8-Paper-Conference.pdf},
  volume = {38},
- year = {2025}
+ year = {2025},
+  abstract={Synaptic plasticity is widely considered to be crucial to the brain’s ability to learn throughout life. Decades of theoretical work have therefore been invested in deriving and designing biologically plausible learning rules capable of granting various memory abilities to neural networks. Most of these theoretical approaches optimize directly for a desired memory function; but this procedure can lead to complex, finely-tuned rules, rendering them brittle to perturbations and difficult to implement in practice. Instead, we build on recent work that automatically discovers large numbers of candidate plasticity rules operating in recurrent spiking neural networks. Surprisingly, despite the fact that these rules are selected solely to achieve network stabilization, we observe across a range of network models - feedforward, recurrent; rate and spikingthat almost all these rules endow the network with simple forms of memory such as familiarity detection - seemingly by accident. To understand this phenomenon, we study an analytic toy model. We observe that memory arises from the degeneracy of weight matrices that stabilize a network: where the network lands in this space of stable weights depends on its past inputs---that is, memory. Even simple Hebbian plasticity rules can utilize this degeneracy, creating a zoo of memory abilities with various lifetimes. In practice, the larger the network and the more co-active plasticity rules in the system, the stronger the memory-by-accident phenomenon becomes. Overall, our findings suggest that activity-silent memory is a near-unavoidable consequence of stabilization. Simple forms of memory, such as familiarity or novelty detection, appear to be widely available resources for plastic brain networks, suggesting that they could form the raw materials that were later sculpted into higher-order cognitive abilities.}
 }
-
 @article{liebana2025dopamine,
   title={Dopamine encodes deep network teaching signals for individual learning trajectories},
   author={Liebana, Samuel and Laffere, Aeron and Toschi, Chiara and Schilling, Louisa and Moretti, Jessica and Podlaski, Jacek and Fritsche, Matthias and Zatka-Haas, Peter and Li, Yulong and Bogacz, Rafal and others},
   journal={Cell},
   year={2025},
   publisher={Elsevier},
+  doi={10.1016/j.cell.2025.05.025},
   url = {https://www.cell.com/cell/fulltext/S0092-8674(25)00575-6},
   abstract={Striatal dopamine plays fundamental roles in fine-tuning learned decisions. However, when learning from naive to expert, individuals often exhibit diverse learning trajectories, defying understanding of its underlying dopaminergic mechanisms. Here, we longitudinally measure and manipulate dorsal striatal dopamine signals in mice learning a decision task from naive to expert. Mice learning trajectories transitioned through sequences of strategies, showing substantial individual diversity. Remarkably, the transitions were systematic; each mouse?s early strategy determined its strategy weeks later. Dopamine signals reflected strategies each animal transitioned through, encoding a subset of stimulus-choice associations. Optogenetic manipulations selectively updated these associations, leading to learning effects distinct from that of reward. A deep neural network using heterogeneous teaching signals, each updating a subset of network association weights, captured our results. Analyzing the model?s fixed points explained learning diversity and systematicity. Altogether, this work provides insights into the biological and mathematical principles underlying individual long-term learning trajectories.}
 }
@@ -293,9 +297,9 @@ abstract={Biological and artificial neural networks develop internal representat
  title = {Get rich quick: exact solutions reveal how unbalanced initializations promote rapid feature learning},
  url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/94074dd5a072d28ff75a76dabed43767-Paper-Conference.pdf},
  volume = {37},
- year = {2024}
+ year = {2024},
+  abstract={While the impressive performance of modern neural networks is often attributed to their capacity to efficiently extract task-relevant features from data, the mechanisms underlying this rich feature learning regime remain elusive, with much of our theoretical understanding stemming from the opposing lazy regime. In this work, we derive exact solutions to a minimal model that transitions between lazy and rich learning, precisely elucidating how unbalanced layer-specific initialization variances and learning rates determine the degree of feature learning. Our analysis reveals that they conspire to influence the learning regime through a set of conserved quantities that constrain and modify the geometry of learning trajectories in parameter and function space. We extend our analysis to more complex linear models with multiple neurons, outputs, and layers and to shallow nonlinear networks with piecewise linear activation functions. In linear networks, rapid feature learning only occurs from balanced initializations, where all layers learn at similar speeds. While in nonlinear networks, unbalanced initializations that promote faster learning in earlier layers can accelerate rich learning. Through a series of experiments, we provide evidence that this unbalanced rich regime drives feature learning in deep finite-width networks, promotes interpretability of early layers in CNNs, reduces the sample complexity of learning hierarchical data, and decreases the time to grokking in modular arithmetic. Our theory motivates further exploration of unbalanced initializations to enhance efficient feature learning.}
 }
-
 @inproceedings{NEURIPS2024_0d288dbe,
  author = {Sandbrink, Kai and Bauer, Jan P. and Proca, Alexandra M. and Saxe, Andrew M. and Summerfield, Christopher and Hummos, Ali},
  booktitle = {Advances in Neural Information Processing Systems},
@@ -306,9 +310,9 @@ abstract={Biological and artificial neural networks develop internal representat
  title = {Flexible task abstractions emerge in linear networks with fast and bounded units},
  url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/0d288dbe7a757672151aa5fb5423ef2e-Paper-Conference.pdf},
  volume = {37},
- year = {2024}
+ year = {2024},
+  abstract={Animals survive in dynamic environments changing at arbitrary timescales, but such data distribution shifts are a challenge to neural networks. To adapt to change, neural systems may change a large number of parameters, which is a slow process involving forgetting past information. In contrast, animals leverage distribution changes to segment their stream of experience into tasks and associate them with internal task abstracts. Animals can then respond flexibly by selecting the appropriate task abstraction. However, how such flexible task abstractions may arise in neural systems remains unknown. Here, we analyze a linear gated network where the weights and gates are jointly optimized via gradient descent, but with neuron-like constraints on the gates including a faster timescale, non-negativity, and bounded activity. We observe that the weights self-organize into modules specialized for tasks or sub-tasks encountered, while the gates layer forms unique representations that switch the appropriate weight modules (task abstractions). We analytically reduce the learning dynamics to an effective eigenspace, revealing a virtuous cycle: fast adapting gates drive weight specialization by protecting previous knowledge, while weight specialization in turn increases the update rate of the gating layer. Task switching in the gating layer accelerates as a function of curriculum block size and task training, mirroring key findings in cognitive neuroscience. We show that the discovered task abstractions support generalization through both task and subtask composition, and we extend our findings to a non-linear network switching between two tasks. Overall, our work offers a theory of cognitive flexibility in animals as arising from joint gradient descent on synaptic and neural gating in a neural network architecture.}
 }
-
 @article{domine2024neuralplayground,
   title={NeuralPlayground: A Standardised Environment for Evaluating Models of Hippocampus and Entorhinal Cortex},
   author={Domin{\'e}, Cl{\'e}mentine C. J. and Carrasco-Davis, Rodrigo and Hollingsworth, Luke and Sirmpilatze, Nikoloz and Tyson, Adam L. and Jarvis, Devon and Barry, Caswell and Saxe, Andrew M.},
@@ -317,9 +321,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2024},
   publisher={Cold Spring Harbor Laboratory},
   doi={10.1101/2024.03.06.583699},
-  url={https://doi.org/10.1101/2024.03.06.583699}
+  url={https://doi.org/10.1101/2024.03.06.583699},
+  abstract={Neural processes in the hippocampus and entorhinal cortex are thought to be crucial for spatial cognition. A growing variety of theoretical models have been proposed to capture the rich neural and behavioral phenomena associated with these circuits. However, systematic comparison of these theories, both against each other and against empirical data, remains challenging. To address this gap, we present NeuralPlayground, an open-source standardised software framework for comparisons between theory and experiment in the domain of spatial cognition. This Python software package offers a reproducible way to compare models against a centralised library of published experimental results, including neural recordings and animal behavior. The framework implements three Agents embodying different computational models; three Experiments comprising publicly available neural and behavioral datasets; a customisable 2-dimensional Arena (continuous and discrete) able to generate common and novel spatial layouts; and a Comparison tool that facilitates systematic comparisons between models and data. Each module can also be used separately, allowing standardised and flexible access to influential models and data sets. We hope NeuralPlayground, available on GitHub 3, provides a starting point for a shared, standardized, open, and reproducible computational understanding of the role of the hippocampus and entorhinal cortex in spatial cognition.}
 }
-
 @inproceedings{lufkin2024localization,
  author = {Lufkin, Leon and Saxe, Andrew and Grant, Erin},
  booktitle = {Advances in Neural Information Processing Systems},
@@ -476,9 +480,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={Nature Publishing Group},
   doi={10.1038/s41593-023-01382-9},
-  url={https://doi.org/10.1038/s41593-023-01382-9}
+  url={https://doi.org/10.1038/s41593-023-01382-9},
+  abstract={Memorization and generalization are complementary cognitive processes that jointly promote adaptive behavior. For example, animals should memorize safe routes to specific water sources and generalize from these memories to discover environmental features that predict new ones. These functions depend on systems consolidation mechanisms that construct neocortical memory traces from hippocampal precursors, but why systems consolidation only applies to a subset of hippocampal memories is unclear. Here we introduce a new neural network formalization of systems consolidation that reveals an overlooked tension-unregulated neocortical memory transfer can cause overfitting and harm generalization in an unpredictable world. We resolve this tension by postulating that memories only consolidate when it aids generalization. This framework accounts for partial hippocampal-cortical memory transfer and provides a normative principle for reconceptualizing numerous observations in the field. Generalization-optimized systems consolidation thus provides new insight into how adaptive behavior benefits from complementary learning systems specialized for memorization and generalization.}
 }
-
 @inproceedings{NEURIPS2023_58692a17,
  author = {Singh, Aaditya and Chan, Stephanie and Moskovitz, Ted and Grant, Erin and Saxe, Andrew and Hill, Felix},
  booktitle = {Advances in Neural Information Processing Systems},
@@ -488,9 +492,9 @@ abstract={Biological and artificial neural networks develop internal representat
  title = {The Transient Nature of Emergent In-Context Learning in Transformers},
  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/58692a1701314e09cbd7a5f5f3871cc9-Paper-Conference.pdf},
  volume = {36},
- year = {2023}
+ year = {2023},
+  abstract={Transformer neural networks can exhibit a surprising capacity for in-context learning (ICL) despite not being explicitly trained for it. Prior work has provided a deeper understanding of how ICL emerges in transformers, e.g. through the lens of mechanistic interpretability, Bayesian inference, or by examining the distributional properties of training data. However, in each of these cases, ICL is treated largely as a persistent phenomenon; namely, once ICL emerges, it is assumed to persist asymptotically. Here, we show that the emergence of ICL during transformer training is, in fact, often transient. We train transformers on synthetic data designed so that both ICL and in-weights learning (IWL) strategies can lead to correct predictions. We find that ICL first emerges, then disappears and gives way to IWL, all while the training loss decreases, indicating an asymptotic preference for IWL. The transient nature of ICL is observed in transformers across a range of model sizes and datasets, raising the question of how much to "overtrain" transformers when seeking compact, cheaper-to-run models. We find that L2 regularization may offer a path to more persistent ICL that removes the need for early stopping based on ICL-style validation tasks. Finally, we present initial evidence that ICL transience may be caused by competition between ICL and IWL circuits.}
 }
-
 @article{flesch2023modelling,
   title={Modelling continual learning in humans with Hebbian context gating and exponentially decaying task signals},
   author={Flesch, Timo and Nagy, David G. and Saxe, Andrew and Summerfield, Christopher},
@@ -501,9 +505,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={Public Library of Science},
   doi={10.1371/journal.pcbi.1010808},
-  url={https://doi.org/10.1371/journal.pcbi.1010808}
+  url={https://doi.org/10.1371/journal.pcbi.1010808},
+  abstract={Humans can learn several tasks in succession with minimal mutual interference but perform more poorly when trained on multiple tasks at once. The opposite is true for standard deep neural networks. Here, we propose novel computational constraints for artificial neural networks, inspired by earlier work on gating in the primate prefrontal cortex, that capture the cost of interleaved training and allow the network to learn two tasks in sequence without forgetting. We augment standard stochastic gradient descent with two algorithmic motifs, so-called "sluggish" task units and a Hebbian training step that strengthens connections between task units and hidden units that encode task-relevant information. We found that the "sluggish" units introduce a switch-cost during training, which biases representations under interleaved training towards a joint representation that ignores the contextual cue, while the Hebbian step promotes the formation of a gating scheme from task units to the hidden layer that produces orthogonal representations which are perfectly guarded against interference. Validating the model on previously published human behavioural data revealed that it matches performance of participants who had been trained on blocked or interleaved curricula, and that these performance differences were driven by misestimation of the true category boundary.}
 }
-
 @article{nelli2023neural,
   title={Neural knowledge assembly in humans and neural networks},
   author={Nelli, Stephanie and Braun, Lukas and Dumbalska, Tsvetomira and Saxe, Andrew and Summerfield, Christopher},
@@ -514,9 +518,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={Elsevier},
   doi={10.1016/j.neuron.2023.02.014},
-  url={https://doi.org/10.1016/j.neuron.2023.02.014}
+  url={https://doi.org/10.1016/j.neuron.2023.02.014},
+  abstract={Human understanding of the world can change rapidly when new information comes to light, such as when a plot twist occurs in a work of fiction. This flexible "knowledge assembly" requires few-shot reorganization of neural codes for relations among objects and events. However, existing computational theories are largely silent about how this could occur. Here, participants learned a transitive ordering among novel objects within two distinct contexts before exposure to new knowledge that revealed how they were linked. Blood-oxygen-level-dependent (BOLD) signals in dorsal frontoparietal cortical areas revealed that objects were rapidly and dramatically rearranged on the neural manifold after minimal exposure to linking information. We then adapt online stochastic gradient descent to permit similar rapid knowledge assembly in a neural network model.}
 }
-
 @article{flesch2023continual,
   title={Continual task learning in natural and artificial agents},
   author={Flesch, Timo and Saxe, Andrew and Summerfield, Christopher},
@@ -527,9 +531,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={Elsevier},
   doi={10.1016/j.tins.2022.12.006},
-  url={https://doi.org/10.1016/j.tins.2022.12.006}
+  url={https://doi.org/10.1016/j.tins.2022.12.006},
+  abstract={How do humans and other animals learn new tasks? A wave of brain recording studies has investigated how neural representations change during task learning, with a focus on how tasks can be acquired and coded in ways that minimise mutual interference. We review recent work that has explored the geometry and dimensionality of neural task representations in neocortex, and computational models that have exploited these findings to understand how the brain may partition knowledge between tasks. We discuss how ideas from machine learning, including those that combine supervised and unsupervised learning, are helping neuroscientists understand how natural tasks are learned and coded in biological brains.}
 }
-
 @article{masis2023strategically,
   title={Strategically managing learning during perceptual decision making},
   author={Mas{\'i}s, Javier and Chapman, Travis and Rhee, Juliana Y. and Cox, David D. and Saxe, Andrew M.},
@@ -539,9 +543,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={eLife Sciences Publications},
   doi={10.7554/eLife.64978},
-  url={https://doi.org/10.7554/eLife.64978}
+  url={https://doi.org/10.7554/eLife.64978},
+  abstract={Making optimal decisions in the face of noise requires balancing short-term speed and accuracy. But a theory of optimality should account for the fact that short-term speed can influence long-term accuracy through learning. Here, we demonstrate that long-term learning is an important dynamical dimension of the speed-accuracy trade-off. We study learning trajectories in rats and formally characterize these dynamics in a theory expressed as both a recurrent neural network and an analytical extension of the drift-diffusion model that learns over time. The model reveals that choosing suboptimal response times to learn faster sacrifices immediate reward, but can lead to greater total reward. We empirically verify predictions of the theory, including a relationship between stimulus exposure and learning speed, and a modulation of reaction time by future learning prospects. We find that rats' strategies approximately maximize total reward over the full learning epoch, suggesting cognitive control over the learning process.}
 }
-
 @article{shamash2023mice,
   title={Mice identify subgoal locations through an action-driven mapping process},
   author={Shamash, Philip and Lee, Sebastian and Saxe, Andrew M. and Branco, Tiago},
@@ -552,9 +556,9 @@ abstract={Biological and artificial neural networks develop internal representat
   year={2023},
   publisher={Elsevier},
   doi={10.1016/j.neuron.2023.03.034},
-  url={https://doi.org/10.1016/j.neuron.2023.03.034}
+  url={https://doi.org/10.1016/j.neuron.2023.03.034},
+  abstract={Mammals form mental maps of the environments by exploring their surroundings. Here, we investigate which elements of exploration are important for this process. We studied mouse escape behavior, in which mice are known to memorize subgoal locations-obstacle edges-to execute efficient escape routes to shelter. To test the role of exploratory actions, we developed closed-loop neural-stimulation protocols for interrupting various actions while mice explored. We found that blocking running movements directed at obstacle edges prevented subgoal learning; however, blocking several control movements had no effect. Reinforcement learning simulations and analysis of spatial data show that artificial agents can match these results if they have a region-level spatial representation and explore with object-directed movements. We conclude that mice employ an action-driven process for integrating subgoals into a hierarchical cognitive map. These findings broaden our understanding of the cognitive toolkit that mammals use to acquire spatial knowledge.}
 }
-
 @misc{flesch2023area,
 	title = {Are task representations gated in macaque prefrontal cortex?},
 	url = {http://arxiv.org/abs/2306.16733},
@@ -572,14 +576,15 @@ abstract={Biological and artificial neural networks develop internal representat
 @article{saglietti2022analyticala,
 	title = {An analytical theory of curriculum learning in teacher-student networks},
 	volume = {35},
+	pdf = {https://proceedings.neurips.cc/paper_files/paper/2022/file/84bad835faaf48f24d990072bb5b80ee-Paper-Conference.pdf},
 	url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/84bad835faaf48f24d990072bb5b80ee-Abstract-Conference.html},
 	urldate = {2024-10-12},
 	journal = {Advances in Neural Information Processing Systems},
 	author = {Saglietti, Luca and Mannelli, Stefano and Saxe, Andrew},
 	year = {2022},
 	pages = {21113--21127},
+  abstract={In animals and humans, curriculum learning---presenting data in a curated order---is critical to rapid learning and effective pedagogy. A long history of experiments has demonstrated the impact of curricula in a variety of animals but, despite its ubiquitous presence, a theoretical understanding of the phenomenon is still lacking. Surprisingly, in contrast to animal learning, curricula strategies are not widely used in machine learning and recent simulation studies reach the conclusion that curricula are moderately effective or ineffective in most cases. This stark difference in the importance of curriculum raises a fundamental theoretical question: when and why does curriculum learning help? In this work, we analyse a prototypical neural network model of curriculum learning in the high-dimensional limit, employing statistical physics methods. We study a task in which a sparse set of informative features are embedded amidst a large set of noisy features. We analytically derive average learning trajectories for simple neural networks on this task, which establish a clear speed benefit for curriculum learning in the online setting. However, when training experiences can be stored and replayed (for instance, during sleep), the advantage of curriculum in standard neural networks disappears, in line with observations from the deep learning literature. Inspired by synaptic consolidation techniques developed to combat catastrophic forgetting, we investigate whether consolidating synapses at curriculum change points can boost the benefits of curricula. We derive generalisation performance as a function of consolidation strength (implemented as a Gaussian prior connecting learning phases), and show that this consolidation mechanism can yield a large improvement in test performance. Our reduced analytical descriptions help reconcile apparently conflicting empirical results, trace regimes where curriculum learning yields the largest gains, and provide experimentally-accessible predictions for the impact of task parameters on curriculum benefits. More broadly, our results suggest that fully exploiting a curriculum may require explicit consolidation at curriculum boundaries.}
 }
-
 @InProceedings{saxe2022neurala,
   title = 	 {The Neural Race Reduction: Dynamics of Abstraction in Gated Networks},
   author =       {Saxe, Andrew and Sodhani, Shagun and Lewallen, Sam Jay},
@@ -635,6 +640,7 @@ abstract={Biological and artificial neural networks develop internal representat
 @inproceedings{lee2021continuala,
 	title = {Continual learning in the teacher-student setup: {Impact} of task similarity},
 	shorttitle = {Continual learning in the teacher-student setup},
+	pdf = {https://proceedings.mlr.press/v139/lee21e/lee21e.pdf},
 	url = {https://proceedings.mlr.press/v139/lee21e.html?ref=https://githubhelp.com},
 	urldate = {2024-10-12},
 	booktitle = {International {Conference} on {Machine} {Learning}},
@@ -642,8 +648,8 @@ abstract={Biological and artificial neural networks develop internal representat
 	author = {Lee, Sebastian and Goldt, Sebastian and Saxe, Andrew},
 	year = {2021},
 	pages = {6109--6119},
+  abstract={Continual learning---the ability to learn many tasks in sequence---is critical for artificial learning systems. Yet standard training methods for deep networks often suffer from catastrophic forgetting, where learning new tasks erases knowledge of the earlier tasks. While catastrophic forgetting labels the problem, the theoretical reasons for interference between tasks remain unclear. Here, we attempt to narrow this gap between theory and practice by studying continual learning in the teacher-student setup. We extend previous analytical work on two-layer networks in the teacher-student setup to multiple teachers. Using each teacher to represent a different task, we investigate how the relationship between teachers affects the amount of forgetting and transfer exhibited by the student when the task switches. In line with recent work, we find that when tasks depend on similar features, intermediate task similarity leads to greatest forgetting. However, feature similarity is only one way in which tasks may be related. The teacher-student approach allows us to disentangle task similarity at the level of readouts (hidden-to-output weights) as well as features (input-to-hidden weights). We find a complex interplay between both types of similarity, initial transfer/forgetting rates, maximum transfer/forgetting, and the long-time (post-switch) amount of transfer/forgetting. Together, these results help illuminate the diverse factors contributing to catastrophic forgetting.}
 }
-
 @article{flesch2022orthogonal,
   title={Orthogonal representations for robust context-dependent task performance in brains and neural networks},
   author={Flesch, Timo and Juechems, Keno and Dumbalska, Tsvetomira and Saxe, Andrew and Summerfield, Christopher},
@@ -653,12 +659,15 @@ abstract={Biological and artificial neural networks develop internal representat
   pages={1258--1270},
   year={2022},
   publisher={Elsevier},
+  doi={10.1016/j.neuron.2022.01.005},
+  url={https://doi.org/10.1016/j.neuron.2022.01.005},
   abstract={How do neural populations code for multiple, potentially conflicting tasks? Here we used computational simulations involving neural networks to define “lazy” and “rich” coding solutions to this context-dependent decision-making problem, which trade off learning speed for robustness. During lazy learning the input dimensionality is expanded by random projections to the network hidden layer, whereas in rich learning hidden units acquire structured representations that privilege relevant over irrelevant features. For context-dependent decision-making, one rich solution is to project task representations onto low-dimensional and orthogonal manifolds. Using behavioral testing and neuroimaging in humans and analysis of neural signals from macaque prefrontal cortex, we report evidence for neural coding patterns in biological brains whose dimensionality and neural geometry are consistent with the rich learning regime.}
 }
 
 @article{saxe2021ifa,
 	title = {If deep learning is the answer, what is the question?},
 	volume = {22},
+	doi = {10.1038/s41583-020-00395-8},
 	url = {https://www.nature.com/articles/s41583-020-00395-8},
 	number = {1},
 	urldate = {2024-10-12},
@@ -667,11 +676,12 @@ abstract={Biological and artificial neural networks develop internal representat
 	year = {2021},
 	note = {Publisher: Nature Publishing Group UK London},
 	pages = {55--67},
+  abstract={Neuroscience research is undergoing a minor revolution. Recent advances in machine learning and artificial intelligence research have opened up new ways of thinking about neural computation. Many researchers are excited by the possibility that deep neural networks may offer theories of perception, cognition and action for biological brains. This approach has the potential to radically reshape our approach to understanding neural systems, because the computations performed by deep networks are learned from experience, and not endowed by the researcher. If so, how can neuroscientists use deep networks to model and understand biological brains? What is the outlook for neuroscientists who seek to characterize computations or neural codes, or who wish to understand perception, attention, memory and executive functions? In this Perspective, our goal is to offer a road map for systems neuroscience research in the age of deep learning. We discuss the conceptual and methodological challenges of comparing behaviour, learning dynamics and neural representations in artificial and biological systems, and we highlight new research questions that have emerged for neuroscience as a direct consequence of recent advances in machine learning.}
 }
-
 @article{advani2020highdimensional,
 	title = {High-dimensional dynamics of generalization error in neural networks},
 	volume = {132},
+	doi = {10.1016/j.neunet.2020.08.022},
 	url = {https://www.sciencedirect.com/science/article/pii/S0893608020303117},
 	urldate = {2024-10-12},
 	journal = {Neural Networks},
@@ -679,8 +689,8 @@ abstract={Biological and artificial neural networks develop internal representat
 	year = {2020},
 	note = {Publisher: Elsevier},
 	pages = {428--446},
+  abstract={We perform an analysis of the average generalization dynamics of large neural networks trained using gradient descent. We study the practically-relevant "high-dimensional" regime where the number of free parameters in the network is on the order of or even larger than the number of examples in the dataset. Using random matrix theory and exact solutions in linear models, we derive the generalization error and training error dynamics of learning and analyze how they depend on the dimensionality of data and signal to noise ratio of the learning problem. We find that the dynamics of gradient descent learning naturally protect against overtraining and overfitting in large networks. Overtraining is worst at intermediate network sizes, when the effective number of free parameters equals the number of samples, and thus can be reduced by making a network smaller or larger. Additionally, in the high-dimensional regime, low generalization error requires starting with small initial weights. We then turn to non-linear neural networks, and show that making networks very large does not harm their generalization performance. On the contrary, it can in fact reduce overtraining, even without early stopping or regularization of any sort. We identify two novel phenomena underlying this behavior in overcomplete models: first, there is a frozen subspace of the weights in which no learning occurs under gradient descent; and second, the statistical properties of the high-dimensional regime yield better-conditioned input correlations which protect against overtraining. We demonstrate that standard application of theories such as Rademacher complexity are inaccurate in predicting the generalization performance of deep neural networks, and derive an alternative bound which incorporates the frozen subspace and conditioning effects and qualitatively matches the behavior observed in simulation.}
 }
-
 @article{saxe2019mathematicalc,
 	title = {A mathematical theory of semantic development in deep neural networks},
 	volume = {116},
@@ -714,13 +724,14 @@ abstract={Biological and artificial neural networks develop internal representat
 @article{goldt2019dynamicsa,
 	title = {Dynamics of stochastic gradient descent for two-layer neural networks in the teacher-student setup},
 	volume = {32},
+	pdf = {https://proceedings.neurips.cc/paper_files/paper/2019/file/cab070d53bd0d200746fb852a922064a-Paper.pdf},
 	url = {https://proceedings.neurips.cc/paper_files/paper/2019/hash/cab070d53bd0d200746fb852a922064a-Abstract.html},
 	urldate = {2024-10-12},
 	journal = {Advances in neural information processing systems},
 	author = {Goldt, Sebastian and Advani, Madhu and Saxe, Andrew M. and Krzakala, Florent and Zdeborová, Lenka},
 	year = {2019},
+  abstract={Deep neural networks achieve stellar generalisation even when they have enough parameters to easily fit all their training data. We study this phenomenon by analysing the dynamics and the performance of over-parameterised two-layer neural networks in the teacher-student setup, where one network, the student, is trained on data generated by another network, called the teacher. We show how the dynamics of stochastic gradient descent (SGD) is captured by a set of differential equations and prove that this description is asymptotically exact in the limit of large inputs. Using this framework, we calculate the final generalisation error of student networks that have more parameters than their teachers. We find that the final generalisation error of the student increases with network size when training only the first layer, but stays constant or even decreases with size when training both layers. We show that these different behaviours have their root in the different solutions SGD finds for different activation functions. Our results indicate that achieving good generalisation in neural networks goes beyond the properties of SGD alone and depends on the interplay of at least the algorithm, the model architecture, and the data set.}
 }
-
 @article{zhang2018energya,
 	title = {Energy–entropy competition and the effectiveness of stochastic gradient descent in machine learning},
 	volume = {116},
@@ -735,8 +746,8 @@ abstract={Biological and artificial neural networks develop internal representat
 	month = nov,
 	year = {2018},
 	pages = {3214--3223},
+  abstract={Finding parameters that minimise a loss function is at the core of many machine learning methods. The Stochastic Gradient Descent (SGD) algorithm is widely used and delivers state-of-the-art results for many problems. Nonetheless, SGD typically cannot find the global minimum, thus its empirical effectiveness is hitherto mysterious. We derive a correspondence between parameter inference and free energy minimisation in statistical physics. The degree of undersampling plays the role of temperature. Analogous to the energy–entropy competition in statistical physics, wide but shallow minima can be optimal if the system is undersampled, as is typical in many applications. Moreover, we show that the stochasticity in the algorithm has a non-trivial correlation structure which systematically biases it towards wide minima. We illustrate our argument with two prototypical models: image classification using deep learning and a linear neural network where we can analytically reveal the relationship between entropy and out-of-sample error.}
 }
-
 @misc{nye2018area,
 	title = {Are {Efficient} {Deep} {Representations} {Learnable}?},
 	url = {http://arxiv.org/abs/1807.06399},
@@ -778,8 +789,8 @@ abstract={Biological and artificial neural networks develop internal representat
 	month = nov,
 	year = {2016},
 	pages = {51--68},
+  abstract={How best can we understand – and visualize – the structure in multi-dimensional data? One common approach is to rely on hierarchical cluster analysis, either for theoretical or for more descriptive reasons. Here, we point out that an apparently revealing hierarchical clustering solution may well be compatible with structure that is not well characterized as a hierarchy. In particular, a hierarchical description can be equally consistent with crosscutting rather than strictly hierarchical, or nested, structure. We offer an alternative approach, based on inspection of the feature vectors provided by a singular value decomposition (SVD) which allows a flexible mixture of hierarchical and cross-cutting dimensions and which can reveal whether dimensions are cross-cutting or nested. The SVD offers a more flexible representation than a hierarchy in that it can capture either hierarchical or cross-cutting structure or blends of these two structure types, or, indeed, many other structure types. We then introduce a refinement of the SVD approach based on sparse principal component analysis that leads to more easily interpretable dimensions. In our dataset, these dimensions correspond to aquatic vs. land animals, large vs. small animals, predators vs prey animals, and primates vs. other mammals.}
 }
-
 @misc{saxe2016hierarchya,
 	title = {Hierarchy through {Composition} with {Linearly} {Solvable} {Markov} {Decision} {Processes}},
 	url = {http://arxiv.org/abs/1612.02757},
@@ -853,8 +864,8 @@ abstract = {In compressed sensing, one takes  samples of an N-dimensional vector
 	author = {Saxe, A. and Bhand, Maneesh and Mudur, Ritvik and Suresh, Bipin and Ng, A.},
 	year = {2011},
 	pages = {24--27},
+  abstract={The efficient coding hypothesis holds that neural receptive fields are adapted to the statistics of the environment, but is agnostic to the timescale of adaptation. In this work we consider the possibility that neural receptive fields are adapted to the statistics during an organism’s lifetime. In particular, we test whether some shared plasticity mechanism can account for normal receptive field properties across multiple primary sensory cortices. Furthermore, we test whether the same mechanism can account for altered receptive field properties when the statistics of the environment are altered experimentally. We find that unsupervised feature learning algorithms are able to capture several receptive field properties across sensory modalities, and also allow us to model receptive field plasticity experiments. The consistent correspondences and discrepancies between these algorithms and experimental data may provide insight into plasticity mechanisms and aid theoretical efforts to develop new learning algorithms.}
 }
-
 @article{balci2011acquisitiona,
 	title = {Acquisition of decision making criteria: reward rate ultimately beats accuracy},
 	volume = {73},
@@ -871,8 +882,8 @@ abstract = {In compressed sensing, one takes  samples of an N-dimensional vector
 	month = feb,
 	year = {2011},
 	pages = {640--657},
+  abstract={Speed–accuracy trade-offs strongly influence the rate of reward that can be earned in many decision-making tasks. Previous reports suggest that human participants often adopt suboptimal speed–accuracy trade-offs in single session, two-alternative forced-choice tasks. We investigated whether humans acquired optimal speed–accuracy trade-offs when extensively trained with multiple signal qualities. When performance was characterized in terms of decision time and accuracy, our participants eventually performed nearly optimally in the case of higher signal qualities. Rather than adopting decision criteria that were individually optimal for each signal quality, participants adopted a single threshold that was nearly optimal for most signal qualities. However, setting a single threshold for different coherence conditions resulted in only negligible decrements in the maximum possible reward rate. Finally, we tested two hypotheses regarding the possible sources of suboptimal performance: (1) favoring accuracy over reward rate and (2) misestimating the reward rate due to timing uncertainty. Our findings provide support for both hypotheses, but also for the hypothesis that participants can learn to approach optimality. We find specifically that an accuracy bias dominates early performance, but diminishes greatly with practice. The residual discrepancy between optimal and observed performance can be explained by an adaptive response to uncertainty in time estimation.}
 }
-
 @misc{saxe2013precisa,
 	title = {Precis of deep linear neural networks: {A} theory of learning in the brain and mind},
 	shorttitle = {Precis of deep linear neural networks},

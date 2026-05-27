@@ -1,47 +1,71 @@
 ---
 ---
 
-<p>{{ reference }}
-	<br>
+<div class="publication-entry">
+	{{ reference }}
 
-	{% assign toggle_var = false %}
-	{% if entry.abstract %}
-		{% assign toggle_var = true %}
-		<a data-bs-toggle="collapse" href="#{{key}}-abstract">Abstract</a>
-		
-	{% endif %}
-
-	{% if link %}
-		{% if toggle_var %}
-		| 
+	{% assign abstract_id = key | append: "-abstract" %}
+	{% assign arxiv_id = entry.arxivid %}
+	{% if arxiv_id == nil or arxiv_id == empty %}
+		{% if entry.archiveprefix == "arXiv" and entry.eprint %}
+			{% assign arxiv_id = entry.eprint %}
 		{% endif %}
-		{% assign toggle_var = true %}
-
-		<a href="{{link}}">pdf</a>
+	{% endif %}
+	{% if arxiv_id %}
+		{% assign arxiv_id = arxiv_id | replace: "https://arxiv.org/abs/", "" | replace: "http://arxiv.org/abs/", "" | remove: "arXiv:" | remove: "arxiv:" %}
 	{% endif %}
 
+	{% assign external_url = entry.url %}
+	{% if external_url == nil or external_url == empty %}
+		{% assign external_url = entry.URL %}
+	{% endif %}
 
-	{% if entry.arxivid %}
-		{% if toggle_var %}
-		| 
+	{% assign pdf_url = link %}
+	{% if entry.pdf %}
+		{% assign pdf_url = entry.pdf %}
+	{% elsif external_url contains "openreview.net/forum?id=" %}
+		{% assign pdf_url = external_url | replace: "/forum?id=", "/pdf?id=" %}
+	{% elsif external_url contains ".pdf" %}
+		{% assign pdf_url = external_url %}
+	{% endif %}
+
+	<div class="publication-links">
+		<a data-bs-toggle="collapse" href="#{{ abstract_id }}" role="button" aria-expanded="false" aria-controls="{{ abstract_id }}">Abstract</a>
+
+		{% assign rendered_source_link = false %}
+		{% if pdf_url %}
+			| <a href="{{ pdf_url }}">pdf</a>
+			{% assign rendered_source_link = true %}
 		{% endif %}
-		{% assign toggle_var = true %}
 
-		<a href="https://arxiv.org/abs/{{entry.arxivid}}">arXiv</a>
-	{% endif %}
-
-	{% if entry.doi %}
-		{% if toggle_var %}
-		| 
+		{% if arxiv_id %}
+			| <a href="https://arxiv.org/abs/{{ arxiv_id }}">arXiv</a>
+			{% assign rendered_source_link = true %}
+		{% elsif external_url contains "arxiv.org/abs/" %}
+			| <a href="{{ external_url }}">arXiv</a>
+			{% assign rendered_source_link = true %}
 		{% endif %}
-		{% assign toggle_var = true %}
 
-		<a href="http://dx.doi.org/{{entry.doi}}">DOI</a>
-	{% endif %}
+		{% if entry.doi %}
+			| <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+			{% assign rendered_source_link = true %}
+		{% elsif external_url contains "doi.org/" %}
+			| <a href="{{ external_url }}">DOI</a>
+			{% assign rendered_source_link = true %}
+		{% endif %}
 
-	{% if entry.abstract %}
-		<p id="{{key}}-abstract" class="collapse abstractindent">{{entry.abstract}}</p>
-	{% endif %}
+		{% unless rendered_source_link %}
+			{% if external_url %}
+				| <a href="{{ external_url }}">link</a>
+			{% endif %}
+		{% endunless %}
+	</div>
 
-
-</p>
+	<div id="{{ abstract_id }}" class="collapse abstractindent">
+		{% if entry.abstract %}
+			{{ entry.abstract }}
+		{% else %}
+			Abstract not available.
+		{% endif %}
+	</div>
+</div>
