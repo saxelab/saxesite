@@ -5,12 +5,11 @@ title: Talks
 
 {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
 {% for talk in sorted_talks %}
-<div class="row my-5">
-  <div class="col-md-3">
+<div class="row my-5 g-4 align-items-start">
+  <div class="col-12 col-md-4 col-lg-3">
     {% if talk.embedurl %}
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item"
-                src="{{ talk.embedurl }}"
+      <div class="ratio ratio-16x9">
+        <iframe src="{{ talk.embedurl }}"
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -39,7 +38,7 @@ title: Talks
     {% endif %}
   </div>
 
-  <div class="col">
+  <div class="col-12 col-md-8 col-lg-9">
     <div class="lead">
       {% if talk.embedurl %}
         {{ talk.name }}
