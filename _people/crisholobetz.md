@@ -4,6 +4,7 @@ name: Cristofer Holobetz
 position: PhD student
 position_type: dphil
 alum: false
+image: cristofer-holobetz.png
 join_date: 2024-09-01
 ---
 
