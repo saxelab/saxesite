@@ -4,6 +4,7 @@ name: Antonio Sclocchi
 position: Postdoctoral Researcher
 position_type: postdoc
 alum: true
+now: Chaire Professeur Junior, Université Paris-Saclay
 image: antonioscl.jpeg
 website: https://antonioscl.github.io/
 orcid: 0000-0001-7755-1634
