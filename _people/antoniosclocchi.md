@@ -3,7 +3,7 @@ short_name: Antonio
 name: Antonio Sclocchi
 position: Postdoctoral Researcher
 position_type: postdoc
-alum: false
+alum: true
 image: antonioscl.jpeg
 website: https://antonioscl.github.io/
 orcid: 0000-0001-7755-1634
